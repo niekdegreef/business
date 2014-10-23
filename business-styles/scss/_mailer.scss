@@ -1,0 +1,62 @@
+.mailer {
+body {
+	background-color: white;
+}
+header#masthead, .site-content, .site-footer {
+max-width: 600px;
+margin:0 auto;
+}
+header#masthead, .site-content {
+	background-color: white;
+}
+img {
+	width:100%;
+}
+.contact {
+	padding:$padding;
+	top:0;
+	float:right;
+	box-shadow: none;
+}
+#primary {
+	width: 100%;
+}
+#secondary {
+	width: 100%;
+	aside {
+		margin-bottom: $gutter;
+		clear:both;
+	}
+}
+h1.site-title {
+	width:100px;
+	float:left;
+}
+.mailer-nav {
+	float:left;
+	@include h-text;
+	clear:both;
+	ul {
+	float:left;
+	margin-left: $gutter;
+
+	}
+	li {
+		display: inline-block;
+		float: left;
+		margin-right:$padding;
+	}
+	p {
+		float: left;
+	}
+}
+address {
+	float:left;
+	text-align: left;
+}
+.homelink {
+	position: absolute;
+}
+
+
+}

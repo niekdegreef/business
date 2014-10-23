@@ -1,0 +1,240 @@
+/*--------------------------------------------------------------
+5.2 Menus - styling from underscores-theme
+--------------------------------------------------------------*/
+.main-navigation {
+	float:left;
+	position: relative;
+	top: $gutter*4;
+	margin-left: $gutter*2;
+	@include h-text;
+	@include breakpoint(medium) { 
+		width:85%;
+		position: relative;
+		top: $gutter*2;
+		margin-left:0;
+		float:right;
+	}
+	@include breakpoint(small) { 
+		float:right;
+		width:10em;
+		top: $gutter;
+	}
+}
+.utility {
+	@include h-text;
+	position: absolute;
+	right:$gutter;
+	padding-top: $padding;
+	font-size: 90%;
+	ul {
+		margin:0;
+	}
+	li {
+		display: inline-block;
+		margin-left:$padding;	
+		a {
+			text-decoration: none;
+			color:$grey;
+			&:hover {
+				color:$secondary;
+				text-decoration: underline;
+			}
+		}
+		&:after {
+				margin-left:$padding;
+				content: '|';
+				@include breakpoint(small) {
+					margin-left:5px;
+				}
+		}
+		&:last-of-type:after {
+				content:'';
+		}
+	}
+	@include breakpoint(medium) { 
+		font-size: 85%;
+		li a {
+			color:$lightgrey;
+		}
+	}
+	@include breakpoint(small) { 
+		font-size: 80%;
+		display: block;
+		width:100%;
+		right:0;
+		li {
+			margin-left: 0;
+		}
+		ul {
+			margin-left:$padding;
+		}
+		li a {
+			font-weight: 200;
+			margin-left:0;	
+		}
+	}
+}
+.is_stuck .main-navigation{
+
+}
+.main-navigation ul {
+	float:left;
+	width: 100%;
+	@include breakpoint(medium) { 
+		float:left;
+		margin-left: $gutter; 
+	}
+}
+.main-navigation li {
+	text-transform: uppercase;
+	font-size: 90%;
+	display: inline-block;
+	margin-right:$gutter;
+	float: left;
+	letter-spacing:1px;
+	@include breakpoint(medium) { 
+		margin-right:$gutter*.5;
+		font-size: 75%;
+		padding-top:.5em;
+		float: left;
+	}
+	span {
+		display: inline-block;
+		clear: both;
+		text-transform: none;
+	}
+}
+li.current-menu-item a {
+}
+
+.main-navigation a {
+	text-decoration: none;
+	color:$grey;
+	&:hover {
+		color:$secondary;
+	}
+}
+.main-navigation ul ul {
+}
+.main-navigation ul ul ul {
+}
+.main-navigation ul ul a {
+}
+.main-navigation ul ul li {
+}
+.main-navigation li:hover > a {
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+}
+.main-navigation ul li:hover > ul {
+}
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+}
+/* Small menu */ 
+.menu-toggle {
+	cursor: pointer;
+	display: none;
+	width:10em;
+	position: absolute;
+	top:$gutter;
+	right:$padding*2;
+	float: right;
+	line-height: 2;
+	text-align: right;
+	margin-top:$gutter;
+	.genericon {
+		font-size: 32px;
+		margin-left:$padding;
+		text-align: right;
+	}
+}
+@media screen and (max-width: $small) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+.main-navigation.toggled  {
+	position: relative;
+}
+.toggled .menu-toggle {
+	width:100%;
+	color:$lightgrey;
+}
+.toggled ul.menu {
+	width:100%;
+	float:left;
+	margin-left:0;
+	margin-bottom:$gutter*2;
+	li {
+		font-size: 80%;
+		width:100%;
+		text-align: right;
+		a {
+			width: 100%;
+		}
+	}
+}
+.footer-nav {
+	ul {
+		columns:2;
+		margin:0 $gutter*2 0 0 ;
+		@include h-text;
+		@include breakpoint(medium) { 
+			width:100%;
+		}
+	}
+	li {
+		margin-right:$gutter*5;
+		a {
+			text-decoration: none;
+			border:none;
+		}
+		@include breakpoint(medium) { 
+			margin-right:$gutter*2;
+		}
+		@include breakpoint(small) { 
+			margin-right:$gutter;
+		}
+	}
+}
+.quick-menu {
+	float:left;
+}
+/* Secondary menu */
+
+.secondary, .site-footer ul {
+}
+.secondary ul li a, .site-footer ul li a {
+}
+.toplink {
+}
+.site-footer ul li a {
+	color:white
+}
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}

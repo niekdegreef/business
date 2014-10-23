@@ -1,0 +1,117 @@
+/* images */
+figure {
+}
+img {
+	max-width: 100%;
+	height:auto;
+}
+.entry-content > div {
+	max-width: 100%;
+}
+.hentry {
+
+}
+.para {
+
+}
+article.people {
+	section {
+		margin-bottom: $gutter*4;
+	}
+	h2 {
+		clear:none;
+	}
+	img {
+		float:left;
+		margin:$padding;
+		max-width: 120px;
+
+	}
+}
+.video_showcase li {
+	margin-bottom:$gutter*2; 
+	padding-right: $gutter*2;
+	max-width: 100%;
+	h3 {
+		clear:none;
+	}
+	@include breakpoint(medium) { 
+		max-width: 47.5%;
+		display: inline-block;
+		float:left;
+		&:nth-child(2n+2) {
+			float:right;
+			@include breakpoint(small) { 
+				float:left;
+			}
+		}
+	}
+	@include breakpoint(small) { 
+		max-width: 100%;
+		float:left;
+	}
+	img {
+		width: 100%;
+	}
+	
+}
+.logo_showcase {
+	img {
+		float:left;
+		display: block;
+		max-width: 50%;
+		height:auto;
+	}
+}
+.site-footer {
+	position: relative;
+	img {
+		max-width: 10em;
+		background-color: white;
+		margin:$padding;
+		float:left;
+	}
+	h3 {
+		clear:none;
+		color:white;
+		border-bottom: 1px solid;
+		display: inline-block;
+		margin-top:0;
+	}
+}
+.site-info {
+	display:block;
+	margin-top:$gutter*2;
+	@include h-text;
+	background: white url("../images/crown.png")no-repeat right;
+	box-shadow: 0 0 50px $grey;
+	clear:both;
+	float:right;
+	padding:$padding;
+	height:10em;
+	width:100%;
+	text-align: right;
+	color:$black;
+	position: relative;
+	span {
+		text-align: left;
+		float:left;
+		width:100%;
+	}
+	h1 {
+		float:left;
+		color:$lightgrey;
+	}
+}
+address {
+	margin-top: 0;
+	float:right;
+	color:white;
+	text-align:right;
+		@include breakpoint(medium) { 
+		width:100%;
+		float:left;
+		text-align:left;
+		margin-top: $gutter;
+	}
+}

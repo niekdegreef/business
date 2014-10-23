@@ -1,0 +1,198 @@
+// small bits, or once-off components
+.contact {
+	background-color: $secondary;
+	display: inline-block;
+	text-decoration: none;
+	padding:$padding $padding*2;
+	@include h-text;
+	line-height: 1.5;
+	float:left;
+	clear:both;
+	letter-spacing: 1px;
+	border-radius: 5px;
+    position: relative;
+    transition:none;
+    // text-shadow: 0 1px 1px hsla(0,0%,24%,.7);
+
+	margin: 0 .5em 1em;
+
+	box-shadow: inset 0 2em 0 hsla(0,0%,100%,.1),
+
+				inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.25),
+                0 .25em .25em hsla(0,0%,0%,.25);
+
+
+	&:hover, &:focus {
+		background-color: darken($secondary , 2%);
+	    box-shadow: 
+            inset 0 -.2em 0 hsla(0,0%,100%,.1),
+            inset 0 -.25em 0 hsla(0,0%,0%,.25),
+            inset 0 2em 0 hsla(0,0%,100%,.05),
+            0 .25em .25em hsla(0,0%,0%,.25);
+	}
+	&:active {
+		background-color: darken($secondary , 4%);
+		box-shadow:
+	    //inset 0 .25em .5em hsla(0,0%,0%,.05),
+	    0 -1px 1px hsla(0,0%,0%,.1),
+	    0 1px 1px hsla(0,0%,100%,.25),
+		
+		0 1px .1em hsla(0,0%,100%, 1),
+	    0 1px .5em hsla(0,0%,0%,.25);
+		margin-top: 1.8em;
+		outline: none;
+		padding-bottom: .5em;
+		@include breakpoint(medium) { 
+			box-shadow: none;
+		}
+	}
+	@include breakpoint(medium) { 
+		width:100%;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	p {
+		color:white;
+		float:none;
+		display: inline-block;
+		width:80%;
+		float:left;
+		text-align: left;
+		margin:0;
+		font-weight: 200;
+	}
+	span {
+		color:white;
+		display: inline-block;
+		font-size: 32px;
+		float:right;
+		text-align: right;
+		width:20%;
+		bottom:$padding;
+		@include breakpoint(medium) { 
+			float:right;
+			position: relative;
+			bottom:0;
+		}
+	}
+
+}
+header .contact {
+	position: absolute;
+	right:$gutter;
+	width:15em;
+	top:3.3em;
+	margin-top: $gutter;
+	margin-bottom: $gutter*2;
+	line-height: 1.3;
+	font-size: 90%;
+	padding:$padding $padding*2;
+	@include breakpoint(large) { 
+		right: 1.618em;
+		width: 25em;
+		line-height: 1;
+		height:2em;
+		display: block;
+		top:$gutter;
+		bottom: $gutter*3;
+		span {
+			line-height: 0.5;
+		}
+	}
+	@include breakpoint(medium) { 
+		position: relative;
+		clear:both;
+		width:100%;
+		right:0;
+		margin-top:1em;
+		margin-bottom:0;
+		top:0;
+	}
+	@include breakpoint(small) { 
+		position: absolute;
+		top:0;
+		background-color: transparent;
+		right:0;
+		width:3em;
+		height:3em;
+		bottom:0;
+		margin-top:0;
+		&:hover, &:active {
+			background-color: transparent;
+		}
+		p {
+			display: none
+		}
+		span {
+			width:100%;
+			color:$secondary;
+			margin-right:$padding;
+		}
+	}
+}
+
+.banner {
+	display: block;
+	margin-bottom: $gutter ;
+	position: relative;
+	background: $primary url(../images/business_header.jpg) no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	clear:both;
+	box-shadow: inset 0px 0px 15px $grey;
+	min-height: 35em;
+	transition: min-height .25s linear;
+	@include breakpoint(large) { 
+		min-height: 30em;
+	}
+	@include breakpoint(medium) { 
+		min-height: 25em;
+	}
+	@include breakpoint(small) { 
+		min-height: 20em;
+	}
+}
+.banner_caption {
+	display: block;
+	background-color: rgba(255, 255, 255, 0.85);
+	position: absolute;
+	border-left: $padding solid $secondary;
+	max-width: 60%;
+	bottom:$gutter;
+	margin: $gutter 0;
+	box-shadow: 2px 2px 15px 0px $black;
+	@include breakpoint(medium) { 
+		max-width: 100%;
+		bottom:$gutter*0.5;
+	}
+	@include breakpoint(small) { 
+		bottom:0;
+	}
+	p {
+		padding:$gutter;
+		margin:0;
+		@include breakpoint(medium) { 
+			padding:$gutter*0.5;
+			font-size: 80%;
+		}
+	}
+}
+.site-title {
+	border:none;
+	margin-bottom: 0;
+	a {
+		border:none
+	}
+	img {
+		max-width: 3.6em;
+		width:100%;
+		@include breakpoint(medium) { 
+		width: 2.4em;
+		}
+	}
+	@include breakpoint(small) { 
+		margin-bottom: 1em;
+		}
+
+}
