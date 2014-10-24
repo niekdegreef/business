@@ -2,6 +2,7 @@ This is my own starter theme for small business sites.
 
 It's structure is as follows:
 
+I've added a branch
 
 * // styles/ 			# style guide accesible at site.styles, should import from scss folder
 
