@@ -2,16 +2,6 @@ This is my own starter theme for small business sites.
 
 It's structure is as follows:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-testing?
-=======
-testing conflict
->>>>>>> testbranch
-=======
-testing conflict
->>>>>>> testbranch
-
 * // styles/ 			# style guide accesible at site.styles, should import from scss folder
 
 * // scss/ 			# import block for main.scss below
