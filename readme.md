@@ -10,7 +10,7 @@ It's structure is as follows:
 * // | 
 * // |– base/ 
 * // |   |– _reset.scss           # Reset/normalize 
-* // |   |– _underscores.scss     # underscores.me style - check which bits are still necesarry, pref. copy to scss files
+* // |   |– _underscores.scss     # underscores.me style - check if necesarry, pref. copy to scss files
 * // |   |– _susy        			# susy https://github.com/ericam/susy
 * // |   |– _global.scss        	# global.scss
 * // |   |– _typography.scss      # Typography rules 
@@ -63,7 +63,6 @@ It's structure is as follows:
 * // |
 * // images/
 * // |
-* // |IF WP THEME:
 * // |
 * // |- 404.php					#
 * // |
@@ -87,7 +86,7 @@ It's structure is as follows:
 * // |
 * // |- header.php				#
 * // |
-* // |- index.php					# 
+* // |- index.php					# start
 * // |
 * // |- page.php					#
 * // |
