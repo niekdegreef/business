@@ -5,7 +5,6 @@ It's structure is as follows:
 
 * // styles/ 			# style guide accesible at site.styles, should import from scss folder
 
-
 * // scss/ 			# import block for main.scss below
 * // | 
 * // |– base/ 
