@@ -3,7 +3,11 @@ This is my own starter theme for small business sites.
 It's structure is as follows:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 testing?
+=======
+testing conflict
+>>>>>>> testbranch
 =======
 testing conflict
 >>>>>>> testbranch
