@@ -27,11 +27,10 @@
     <header id="masthead" class="site-header group" role="banner">
         <div class="site-branding">
             <h1 class="site-title"><a href="/" rel="home"><img src="business-styles/images/logo.png" alt=""></a></h1>
-<!--             <h2 class="site-description">site description</h2>
- -->    </div>
+        </div>
         <nav class="utility">
             <ul>
-                <li><a href="#">careers</a></li>
+                <li><a href="#">careers!</a></li>
                 <li><a href="#">terms &amp; conditions</a></li>
                 <li><a href="#">contact</a></li>
                 <li><a href="mailer.php">mailer</a></li>
