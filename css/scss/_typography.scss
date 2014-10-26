@@ -1,162 +1,82 @@
 @import "genericons.scss"; @import "mixins.scss";
+// gridlover:
 
 
-body, button, input, select, textarea {
-	@include font-size(1);
-	@include b-text;
-	color:$text;
-	line-height: $gutter;
-	@include b-text;
+body {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0 auto;
+  @include b-text
 }
-.site-title, .site-description {
-
-	@include breakpoint(medium) { 
- 
-	}
-	@include breakpoint(small) { 
-
-	}
-	img {
-		@include breakpoint(small) { 
-		}
-	}
-}
-.site-description {
-
-}
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	@include h-text;
-	@include font-size(2.6);
-	font-weight: normal;
-	@include breakpoint(small) { 
-		@include font-size(1.9);
+	@include h-text
+}
+h1 {
+  font-size: 3.375em;
+  line-height: 1.037037038em;
+  margin-top: 1.03703704em;
+  margin-bottom: 0.51851852em;
+  	@include breakpoint(large) { 
+		font-size: 2.25em;
+		line-height: 1.555555556em;
+		margin-top: 1.55555556em;
+		margin-bottom: 0.77777778em;
 	}
-	a {
-		color:inherit
-	}
-}
-.heading {
-
-}
-h1, h1 a {
-	text-transform: uppercase;
-	color:$black;
-	font-weight:900;
-	span {
-		font-weight:400;
-		display: inline-block;
-		@include font-size(1.5);
-		letter-spacing: 0;
-		@include breakpoint(small) { 
-			@include font-size(1.3);
-		}
-	}
-}
-h1 a {
-
-}
-.menu-toggle {
-	border:none;
-	font-size: 1em;
 }
 h2 {
-	@include font-size(1.4);
-	text-transform: uppercase;
-	color:$black;
-	margin-top:$gutter;
-	text-align: left;
-span {
-		font-weight: 300;
-		@include font-size(1);
+  font-size: 2.25em;
+  line-height: 1.555555556em;
+  margin-top: 1.55555556em;
+  margin-bottom: 0.77777778em;
+	@include breakpoint(large) { 
+		font-size: 1.5em;
+		line-height: 1.166666667em;
+		margin-top: 1.16666667em;
+		margin-bottom: 1.16666667em;
 	}
 }
-.secondary aside h2 {
-	color:$primary
+h3 {
+  font-size: 1.5em;
+  line-height: 1.166666667em;
+  margin-top: 1.16666667em;
+  margin-bottom: 1.16666667em;
+	@include breakpoint(large) { 
+		font-size: 1em;
+		line-height: 1.75em;
+		margin-top: 1.75em;
+		margin-bottom: 1.75em;
+		}
 }
-h3,h4,h5,h6 {
-	@include font-size(1.2);
-	text-transform: uppercase;
+h4 {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
 }
-h5,h6 {
-	text-transform: none;
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
 }
+
+/* Sanitation */
 hr {
-	background-color: $black;
-	border: 0;
-	height: 1px;
+  border: 1px solid;
+  margin: -1px 0;
 }
-section { // using this for the sidebar
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.secondary {
-	h3, p {
-		font-size: 90%
-	}
+b, strong, em, small, code {
+  line-height: 1;
 }
-/* =title */
-.site-title {
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
 }
-.entry-title {
-	clear:none;
-}
-.entry-content {
-	h2, h3, h4, h5, h6 {
-
-	}
-	h2 {
-	}
-	ul li {
-
-	}
-	ol li {
-
-	}
-}
-.page_tagline {
-
-}
-/* Links */
-a {
-	color:$links;
-}
-a:visited {
-}
-a:hover,
-a:focus,
-a:active {
-	color:darken($secondary , 15%);
-	@include link-hover; 
-}
-a:active {
-	color:darken($primary , 25%);
-	@include link-hover; 
-}
-.inline-link {
-	display: inline-block;
-}
-/* Text elements */
-p, .bodytext {
-	margin-bottom: 1.5em;
-	max-width: 48.75em;
-}
-p+p {
-	&:first-letter { 
-		// padding-left: 1em;
-	}
-}
-figure {
-	line-height: 1; // set to 0 for empty elements, otherwise browser makes up empty space between image and container
-	display: inline-block
-}
-figcaption, .caption, .wp-caption-text {
-
-}
-.tagline {
-	clear:both;
-}
-ul, ol {
-
+sub {
+  top: 0.4em;
 }
 ul, ol{
 	list-style: none;
@@ -178,9 +98,6 @@ ul ul ul, ol ol ol {
 ol {
 	list-style: decimal;
 }
-li {
-
-}
 li > ul,
 li > ol {
 
@@ -201,7 +118,6 @@ blockquote {
 	margin: 0 1.5em;
 	font-size: 120%;
 	color:$lightgrey;
-	font-weight: 400;
 	font-style: italic;
 }
 address {

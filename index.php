@@ -4,7 +4,7 @@
 <!-- <iframe width="100%" height="600px" src="//www.youtube.com/embed/XlP6YT2sylI" frameborder="0"></iframe> -->
 
         <div class="banner_caption">
-            <p>BDG business is a website template by <a href="http://beyerdegreef.com">Beyer de Greef</a> featuring clean typography: Nimbus-sans &amp; Calluna, bold design</p>
+            <p>BDG business is a website template by <a href="http://beyerdegreef.com">Beyer de Greef</a> featuring clean typography: Roboto, (or, with Typekit, Nimbus-sans &amp; Calluna ) bold design</p>
         </div>
     </div>
 
@@ -49,13 +49,13 @@
             <aside class="widget logo_showcase">
             <h2>Software</h2>
 
-            <img src="business-styles/images/logo1.png" alt="">
-            <img src="business-styles/images/logo2.png" alt="">
-            <img src="business-styles/images/logo3.png" alt="">
-            <img src="business-styles/images/logo4.png" alt="">
-            <img src="business-styles/images/logo5.png" alt="">
-            <img src="business-styles/images/logo6.png" alt="">
-            <img src="business-styles/images/logo7.png" alt="">
+            <img src="images/logo1.png" alt="">
+            <img src="images/logo2.png" alt="">
+            <img src="images/logo3.png" alt="">
+            <img src="images/logo4.png" alt="">
+            <img src="images/logo5.png" alt="">
+            <img src="images/logo6.png" alt="">
+            <img src="images/logo7.png" alt="">
             
         </aside>
 

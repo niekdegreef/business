@@ -2,17 +2,18 @@
 5.2 Menus - styling from underscores-theme
 --------------------------------------------------------------*/
 .main-navigation {
-	float:left;
+	@include span(7);
 	position: relative;
-	top: $gutter*4;
-	margin-left: $gutter*2;
+	padding-top: $gutter*3;
 	@include h-text;
+	ul {
+		margin: 0;
+	}
+	@include breakpoint(large) { 
+		// @include span(6);
+	}
 	@include breakpoint(medium) { 
-		width:85%;
-		position: relative;
-		top: $gutter*2;
-		margin-left:0;
-		float:right;
+		// @include span(9);
 	}
 	@include breakpoint(small) { 
 		float:right;
@@ -21,7 +22,6 @@
 	}
 }
 .utility {
-	@include h-text;
 	position: absolute;
 	right:$gutter;
 	padding-top: $padding;
@@ -69,7 +69,6 @@
 			margin-left:$padding;
 		}
 		li a {
-			font-weight: 200;
 			margin-left:0;	
 		}
 	}

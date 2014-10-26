@@ -12,12 +12,10 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/navigation.js"></script>
-        <script type="text/javascript" src="//use.typekit.net/qad5dxh.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    </head>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic' rel='stylesheet' type='text/css'>    </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -26,11 +24,11 @@
 
     <header id="masthead" class="site-header group" role="banner">
         <div class="site-branding">
-            <h1 class="site-title"><a href="/" rel="home"><img src="business-styles/images/logo.png" alt=""></a></h1>
+            <h1 class="site-title"><a href="/" rel="home"><img src="images/logo.png" alt=""></a></h1>
         </div>
         <nav class="utility">
             <ul>
-                <li><a href="#">careers!</a></li>
+                <li><a href="#">careers</a></li>
                 <li><a href="#">terms &amp; conditions</a></li>
                 <li><a href="#">contact</a></li>
                 <li><a href="mailer.php">mailer</a></li>

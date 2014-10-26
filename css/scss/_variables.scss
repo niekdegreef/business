@@ -1,17 +1,25 @@
-/* variables */
 
-$primary: #2BBCC8; $primaryAlt: #22959e; //(= darkened 10%)
-$secondary: #E9371A; $secondaryAlt: #fbdad4; //(= lightened 40%)
+// Colour values & classes (used in style guide, and possibly in site)
 
-// $tertiary: #f2c517; $tertiaryAlt: #f2c517;
+$primary: #2BBCC8; .primary {background-color: $primary; }
 
-$action: $secondary;
+$primaryAlt: #22959e; .primaryAlt {background-color: $primaryAlt; } //(= darkened 10%)
+
+$secondary: #E9371A; .secondary {background-color: $secondary; }
+
+$secondaryAlt: #fbdad4; .secondaryAlt {background-color: $secondaryAlt; }//(= lightened 40%)
+
+$action: $secondary; .action {background-color: $action; }
  
-$black: #16100F; // = darkred
-$darkgrey:#2B2D33;
-$grey:#616266;
-$lightgrey:#C0C2C9;
-$lightergrey:#E6E6E6;
+$lightergrey: #E6E6E6; .lightergrey {background-color: $lightergrey; }
+
+$lightgrey: #C0C2C9; .lightgrey {background-color: $lightgrey; }
+
+$grey: #616266;  .grey {background-color: $grey; }
+
+$darkgrey: #2B2D33; .darkgrey {background-color: $darkgrey; }
+
+$black: #16100F; .black {background-color: $black; } // = darkred 
 
 $shadow: $black;
 $text: $grey;

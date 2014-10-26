@@ -12,10 +12,11 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script type="text/javascript" src="//use.typekit.net/qad5dxh.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic' rel='stylesheet' type='text/css'>  
+
     </head>
     <body class="mailer">
         <!--[if lt IE 8]>

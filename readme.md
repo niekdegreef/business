@@ -10,19 +10,21 @@
 
 ##Online tools
 
-* Typekit 
-* Typecast
+* Typekit where necesarry
+
 
 ##Process
 
-* Design & set up styles in AI
-* Configure servers: MAMP / remote dev server [check php versions are same]
-* Set up folder structure, drop into codekit [check libsass comiler & autoprefixr checked]
-* Download latest underscores starter theme: http://underscores.me/
-* Get latest version of susy https://github.com/ericam/susy
-* Set basic variables, colours, padding, margin (with susy so these are relative to the grid)
-* Define typography (http://www.gridlover.net/app/)
-* Take parts from the underscores.css and put them in correct files
+1. Design & set up styles in AI
+1. Configure servers: MAMP / remote dev server [check php versions are same]
+1. Set up folder structure, drop into codekit [check libsass comiler & autoprefixr checked]
+1. Download latest underscores starter theme: http://underscores.me/
+1. Get latest version of susy https://github.com/ericam/susy (or use via Codekit)
+1. Include " @import "susy"; " in the mains.scss to use Susy via Codekit
+1. Set basic variables, colours, padding, margin (with susy so these are relative to the grid)
+1. Edit the styles document, change colour names & classes where needed
+1. Define typography (http://www.gridlover.net/app/)
+1. Take parts from the underscores.css and put them in correct files
 
 
 ##File structure
@@ -35,7 +37,8 @@
 
 * ### scss
 	* **base**
-		* _reset.scss 			 [ reset/normalize ] 
+		* _reset.scss 			 [ reset ] 
+		* _normalize.scss 		 [ normalize (instead of reset when applicable) ] 
 		* _underscores.scss      [ underscores.me style - check if necesarry, pref. copy to scss files ]
 		* _susy        			 [ susy https://github.com/ericam/susy ]
 		* _global.scss        	 [ global.scss ]
@@ -60,15 +63,15 @@
 		* _gallery.scss   		 [ Gallery specific styles ]
 		* _contact.scss   		 [ Contact specific styles ]
 	* **themes**
-		* _admin.scss      		 [ Admin theme ]
 		* _mailer.scss     		 [ Mailer theme ]
 	* **vendors**
-		* _royalslider.scss   	 [ royalslider ]
+		* _slider.scss   	 	 [ slider ]
 		* _lightgallery.scss  	 [ lightgallery ]
 	* **quick fixes**
 		* _bits.scss 
 		* _shame.scss
 	* **main.scss**				 [ imports everything, compile compressed ]
+	* **admin.scss**			 [ for WP admin styles ]
 
 * ### js
 	* ####vendors
@@ -102,7 +105,7 @@
 	* sidebar.php				#
 	* single.php				#
 	* style.css					#
-	* style.scss				# imports scss/main.scss, include wp-theme statement at top 
+	* style.scss				# imports css/css/style.css, but includes wp-theme statement at top 
 
 ### import block:
 
@@ -110,7 +113,6 @@
 		@import "mixins.scss";
 		@import "susy";
 		@import "reset.scss";
-		@import "default.scss";
 		@import "genericons.scss";
 		@import "global.scss";
 		@import "lightgallery.scss";
@@ -130,5 +132,6 @@
 		@import "contact.scss";
 		@import "admin.scss";
 		@import "mailer.scss";
-		@import "royalslider.scss";
+		@import "slider.scss";
+		@import "bits.scss";
 		@import "shame.scss";

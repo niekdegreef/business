@@ -1,0 +1,17 @@
+.site-title {
+	border:none;
+	margin-bottom: 0;
+	font-size: 3em;
+	a {
+		border:none
+	}
+	img {
+		width: span(7);
+		@include breakpoint(medium) { 
+		width: 2.4em;
+		}
+	}
+	@include breakpoint(small) { 
+		margin-bottom: 1em;
+		}
+}

@@ -1,15 +1,21 @@
+/*clearfix*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* apply a natural box layout model to all elements */
+* { box-sizing: border-box; }
+img { width:100%}
+
 body {
 	background-repeat: no-repeat;
 } 
-header#masthead {
+.site-header {
+	@include centrethis;
 	position: relative;
-	max-width: $xlarge;
-	margin:0 auto;
-	min-height:$gutter*6;
-	padding:0 $gutter;
 	margin-bottom: $gutter;
 	@include breakpoint(medium) { 
-		padding:0 $gutter*0.5;
 	}
 	@include breakpoint(small) { 
 		min-height:$gutter*4;
@@ -18,7 +24,10 @@ header#masthead {
 }
 .site-branding {
 	float:left;
-	max-width: 20%;
+	width: span(2);
+	img {
+		width: span(1 of 12);
+	}
 	@include breakpoint(small) { 
 		clear:both;
 		position: relative;
@@ -29,14 +38,19 @@ header#masthead {
 	}
 }
 .site-content {
-	max-width: $large;
+	// background-color: red;
 	border-top: 1px solid $secondaryAlt;
-	padding: 0 $gutter;
 	padding-top:$gutter*2;
-	@include centrethis;
-		position: relative;
+	// @include centrethis;
+
+	@include container($large);
+	
+
+	position: relative;
+	@include breakpoint(large) { 
+		
+	}
 	@include breakpoint(medium) { 
-		padding:0 $gutter*0.5;
 		padding-top:$gutter;
 		border:none;
 	}
@@ -46,44 +60,39 @@ header#masthead {
 }
 .site-content.home{
 	border-top: none;
-	padding: 0 $gutter;
 }
-.secondary {
-	width:22.5%;
-	float:right;
+.sidebar {
+	background-color: green;
+	// max-width: span(4 right);
+	@include span(4 last);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%
 	}
 }
-#primary {
+.content-area {
 	float:left;
-	width:72.5%;
+	@include span(8);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%;
 	}
 }
-#main {
-
-}
-.secondary aside {
+.sidebard aside {
 	margin-bottom: $gutter;
 }
 article header {
 	margin-bottom: $gutter*2;
 }
 .colOne {
-	float:left;
-	width:45%;
+	@include span(4 of 8);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%;
 	}
 }
 .colTwo {
-	float:right;
-	width:45%;
+	@include span(4 of 8 last);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%;
@@ -92,19 +101,18 @@ article header {
 .site-footer {
 	clear: both;
 	margin-top: $gutter*4;
-	padding: $gutter*3 0;
-	width:100%;
+	padding-top: $gutter*3;
 	background-color: $primary;
 	min-height:15em;
 	border-top:$padding solid $secondary;
+	@include span(12);
 }
 
 /* Alignment */
 .centre-wrapper {
 	@include centrethis;
-	padding: 0 $gutter;
+
 	@include breakpoint(medium) { 
-		padding: 0 $gutter*0.5;
 	}
 }
 .alignleft {

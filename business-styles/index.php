@@ -78,8 +78,7 @@
   <!-- Replace below stylesheet with your own stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <script type="text/javascript" src="//use.typekit.net/qad5dxh.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -114,21 +113,21 @@
   <div class="sg-info">               
     <div class="sg-about sg-section">
       <h2 class="sg-h2"><a id="sg-about" class="sg-anchor">About</a></h2>
-      <p>Comments and documentation about your style guide. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nobis enim labore facilis consequuntur! Veritatis neque est suscipit tenetur temporibus enim consequatur deserunt perferendis. Neque nemo iusto minima deserunt amet.Comments and documentation about your style guide. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nobis enim labore facilis consequuntur! Veritatis neque est suscipit tenetur temporibus enim consequatur deserunt perferendis. Neque nemo iusto minima deserunt amet.</p><p>Comments and documentation about your style guide. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nobis enim labore facilis consequuntur! Veritatis neque est suscipit tenetur temporibus enim consequatur deserunt perferendis. Neque nemo iusto minima deserunt amet.Comments and documentation about your style guide. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nobis enim labore facilis consequuntur! Veritatis neque est suscipit tenetur temporibus enim consequatur deserunt perferendis. Neque nemo iusto minima deserunt amet.</p>
+      <p>Comments and documentation about the style guide. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nobis enim labore facilis consequuntur! Veritatis neque est suscipit tenetur temporibus enim consequatur deserunt perferendis. Neque nemo iusto minima deserunt amet.</p><p>Comments and documentation about your style guide. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
     </div><!--/.sg-about-->
     
     <div class="sg-colors sg-section">
       <h2 class="sg-h2"><a id="sg-colors" class="sg-anchor">Colors</a></h2>
-        <div class="sg-color sg-color--a"><span class="sg-color-swatch"><span class="sg-animated">primary</span></span> </div>
-        <div class="sg-color sg-color--b"><span class="sg-color-swatch"><span class="sg-animated">primaryAlt</span></span></div>
-        <div class="sg-color sg-color--c"><span class="sg-color-swatch"><span class="sg-animated">secondary </span></span></div>
-        <div class="sg-color sg-color--d"><span class="sg-color-swatch"><span class="sg-animated">secondaryAlt </span></span></div>
-        <div class="sg-color sg-color--e"><span class="sg-color-swatch"><span class="sg-animated">tertiary </span></span></div>
-        <div class="sg-color sg-color--f"><span class="sg-color-swatch"><span class="sg-animated">action </span></span></div>
-        <div class="sg-color sg-color--g"><span class="sg-color-swatch"><span class="sg-animated">black </span></span><p>Menu text </p></div>
-        <div class="sg-color sg-color--h"><span class="sg-color-swatch"><span class="sg-animated">darkgrey </span></span><p> text </p></div>
-        <div class="sg-color sg-color--i"><span class="sg-color-swatch"><span class="sg-animated">grey </span></span></div>
-        <div class="sg-color sg-color--j"><span class="sg-color-swatch"><span class="sg-animated">lightgrey </span></span></div>
+        <div class="sg-color primary"><span class="sg-color-swatch"><span class="sg-animated">primary</span></span> </div>
+        <div class="sg-color primaryAlt"><span class="sg-color-swatch"><span class="sg-animated">primaryAlt</span></span></div>
+        <div class="sg-color secondary"><span class="sg-color-swatch"><span class="sg-animated">secondary </span></span></div>
+        <div class="sg-color secondaryAlt"><span class="sg-color-swatch"><span class="sg-animated">secondaryAlt </span></span></div>
+        <div class="sg-color action"><span class="sg-color-swatch"><span class="sg-animated">action </span></span></div>
+        <div class="sg-color lightergrey"><span class="sg-color-swatch"><span class="sg-animated">lightergrey </span></span></div>
+        <div class="sg-color lightgrey"><span class="sg-color-swatch"><span class="sg-animated">lightgrey </span></span></div>
+        <div class="sg-color grey"><span class="sg-color-swatch"><span class="sg-animated">grey </span></span></div>
+        <div class="sg-color darkgrey"><span class="sg-color-swatch"><span class="sg-animated">darkgrey </span></span></div>
+        <div class="sg-color black"><span class="sg-color-swatch"><span class="sg-animated">black </span></span></div>
         <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
     </div><!--/.sg-colors-->
     
@@ -146,7 +145,7 @@
   </div><!--/.sg-base-styles-->
 
   <div class="sg-pattern-styles">
-    <h1 class="sg-h1">Pattern Styles<small> - Design and mark-up patterns unique to your site.</small></h1>
+    <h1 class="sg-h1">Pattern Styles<small> - Design and mark-up patterns unique to this site.</small></h1>
     <?php showMarkup('patterns'); ?>
     </div><!--/.sg-pattern-styles-->
   </div><!--/.sg-body-->

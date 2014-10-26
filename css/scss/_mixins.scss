@@ -1,16 +1,18 @@
 @mixin b-text{
-  font-family: "calluna" , sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  // font-style: italic; available if needed
 } 
 @mixin h-text{
-  font-family: "nimbus-sans" , sans-serif;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 } 
 @mixin font-size($sizeValue: 1.6) {
     font-size: ($sizeValue * 10) * 1px;
     font-size: $sizeValue * 1rem;
 }
 @mixin centrethis{
-  max-width: $xlarge;
+  max-width: $large;
   margin:0 auto;
 }
 @mixin genericons-rules {
