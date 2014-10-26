@@ -28,10 +28,10 @@
 ##File structure
 
 * ### styles 
-		[http://brettjankord.com/projects/style-guide-boilerplate/ OR https://github.com/adactio/Pattern-Primer]
+* [http://brettjankord.com/projects/style-guide-boilerplate/ OR https://github.com/adactio/Pattern-Primer]
 
 	* index.php 				 [ style guide accesible at site.styles ]
-	* style.css 				 [ import from site's css flder ]
+	* style.css 				 [ import from site's css: @import '../../style.css'; ]
 
 * ### scss
 	* **base**
@@ -66,6 +66,7 @@
 		* _royalslider.scss   	 [ royalslider ]
 		* _lightgallery.scss  	 [ lightgallery ]
 	* **quick fixes**
+		* _bits.scss 
 		* _shame.scss
 	* **main.scss**				 [ imports everything, compile compressed ]
 

@@ -71,6 +71,7 @@
 <meta charset="utf-8">
   <title>Business template</title>
   <meta name="viewport" content="width=device-width">
+  
   <!-- Style Guide Boilerplate Styles -->
   <link rel="stylesheet" href="css/sg-style.css">
   
