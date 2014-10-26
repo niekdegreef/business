@@ -1,17 +1,14 @@
 #This is my own starter theme for small business sites. #
 
-##Tools
+##Local tools
+ * MAMP
+ * Codekit
+ * Github client
+ * Susy grids - https://github.com/ericam/susy
+ * SCSS
+ * Devdocs - http://devdocs.io
 
-###Local
-
-* MAMP
-* Codekit
-* Github client
-* Susy grids - https://github.com/ericam/susy
-* SCSS
-* Devdocs - http://devdocs.io
-
-###Online
+##Online tools
 
 * Typekit 
 * Typecast
@@ -84,7 +81,7 @@
 
 * ### images
 
-* ### for WP sites:
+* ### for Wordpress sites [as per the Underscores theme https://github.com/Automattic/underscores.me]:
 
 	* 404.php					#
 	* archive.php				#
@@ -108,29 +105,29 @@
 
 ### import block:
 
-@import "variables.scss";
-@import "mixins.scss";
-@import "susy";
-@import "reset.scss";
-@import "default.scss";
-@import "genericons.scss";
-@import "global.scss";
-@import "lightgallery.scss";
-@import "underscores.scss";
-@import "typography.scss"; 
-@import "shittybrowser.scss";
-@import "touch.scss";
-@import "buttons.scss";
-@import "navigation.scss";
-@import "grid.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "sidebar.scss";
-@import "forms.scss";
-@import "home.scss";
-@import "gallery.scss";
-@import "contact.scss";
-@import "admin.scss";
-@import "mailer.scss";
-@import "royalslider.scss";
-@import "shame.scss";
+		@import "variables.scss";
+		@import "mixins.scss";
+		@import "susy";
+		@import "reset.scss";
+		@import "default.scss";
+		@import "genericons.scss";
+		@import "global.scss";
+		@import "lightgallery.scss";
+		@import "underscores.scss";
+		@import "typography.scss"; 
+		@import "shittybrowser.scss";
+		@import "touch.scss";
+		@import "buttons.scss";
+		@import "navigation.scss";
+		@import "grid.scss";
+		@import "header.scss";
+		@import "footer.scss";
+		@import "sidebar.scss";
+		@import "forms.scss";
+		@import "home.scss";
+		@import "gallery.scss";
+		@import "contact.scss";
+		@import "admin.scss";
+		@import "mailer.scss";
+		@import "royalslider.scss";
+		@import "shame.scss";
