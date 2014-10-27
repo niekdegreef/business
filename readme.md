@@ -1,4 +1,4 @@
-#This is my own starter theme for small business sites. #
+#Personal starter theme & dev notes for small WP sites. #
 
 ##Local tools
  * MAMP
