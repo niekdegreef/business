@@ -11,7 +11,8 @@
 ##Online tools
 
 * Typekit where necesarry
-
+* Typecast
+* Gridlover
 
 ##Process
 
@@ -39,19 +40,19 @@
 	* **base**
 		* _reset.scss 			 [ reset ] 
 		* _normalize.scss 		 [ normalize (instead of reset when applicable) ] 
-		* _underscores.scss      [ underscores.me style - check if necesarry, pref. copy to scss files ]
+		* _underscores.scs		 [ underscores.me style - check if necesarry, pref. copy to scss files ]
 		* _susy        			 [ susy https://github.com/ericam/susy ]
-		* _global.scss        	 [ global.scss ]
-		* _typography.scss       [ Typography rules  ]
-		* _shittybrowser.scss    [ IE rules  ]
+		* _global.scss        		 [ global.scss ]
+		* _typography.scs		 [ Typography rules  ]
+		* _shittybrowser.scs		 [ IE rules  ]
 		* _touch.scss   		 [ touch rules  ]
-		* _genericons.scss  	 [ icons ]
+		* _genericons.scss  		 [ icons ]
 	* **helpers**
 		* _variables.scss  		 [ Sass Variables ]
 		* _mixins.scss     		 [ Sass Mixins ]
 	* **components**
-		* _navigation.scss  	 [ Navigation ]
-		* _buttons.scss     	 [ Buttons ]
+		* _navigation.scss  		 [ Navigation ]
+		* _buttons.scss     		 [ Buttons ]
 	* **layout**
 		* _grid.scss       		 [ Grid system ]
 		* _header.scss     		 [ Header ]
@@ -66,7 +67,7 @@
 		* _mailer.scss     		 [ Mailer theme ]
 	* **vendors**
 		* _slider.scss   	 	 [ slider ]
-		* _lightgallery.scss  	 [ lightgallery ]
+		* _lightgallery.scss  		 [ lightgallery ]
 	* **quick fixes**
 		* _bits.scss 
 		* _shame.scss
@@ -74,37 +75,38 @@
 	* **admin.scss**			 [ for WP admin styles ]
 
 * ### js
-	* ####vendors
+	* **vendors**
 		* _jquery.js     	
 		* _modernizr.js 
 		* _masonry.js   
 		* _stellar.js   
-	* ####min
+	* **min**
 		* _myscripts.min.js	# minified
 		* _vendor.min.js	# minified - combined all vendor .js
 
 * ### images
 
-* ### for Wordpress sites [as per the Underscores theme https://github.com/Automattic/underscores.me]:
+* ### for Wordpress sites 
+[as per the Underscores theme https://github.com/Automattic/underscores.me]:
 
-	* 404.php					#
+	* 404.php				#
 	* archive.php				#
 	* comments.php				#
 	* content-none.php			#
 	* content-page.php			#
-	* content-search.php		#
-	* content-single.php		#
+	* content-search.php			#
+	* content-single.php			#
 	* content.php				#
 	* footer.php				#
 	* functions.php				#
 	* header.php				#
-	* index.php					# start
-	* page.php					#
+	* index.php				# start
+	* page.php				#
 	* screenshot.png			#
 	* search.php				#
 	* sidebar.php				#
 	* single.php				#
-	* style.css					#
+	* style.css				#
 	* style.scss				# imports css/css/style.css, but includes wp-theme statement at top 
 
 ### import block:
