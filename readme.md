@@ -28,10 +28,10 @@
 1. Take parts from the underscores.css and put them in correct files
 
 
-##File structure
+## File structure
 
-* ### styles 
-* [http://brettjankord.com/projects/style-guide-boilerplate/ OR https://github.com/adactio/Pattern-Primer]
+* ### styles
+[http://brettjankord.com/projects/style-guide-boilerplate/ OR https://github.com/adactio/Pattern-Primer]
 
 	* index.php 				 [ style guide accesible at site.styles ]
 	* style.css 				 [ import from site's css: @import '../../style.css'; ]
