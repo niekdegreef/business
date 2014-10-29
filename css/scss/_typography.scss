@@ -1,57 +1,70 @@
 @import "genericons.scss"; @import "mixins.scss";
-// gridlover:
+
+// gridlover for vertical rhytm, font size 16px / line-height 1,725 / scale factor 1,333 
 
 
 body {
   font-size: 1em;
   line-height: 1.75em;
-  margin: 0 auto;
-  @include b-text
+  margin: 0 auto; 
+  @include b-text;
 }
 h1, h2, h3, h4, h5, h6 {
-	@include h-text
+	@include h-text;
 }
 h1 {
-  font-size: 3.375em;
-  line-height: 1.037037038em;
-  margin-top: 1.03703704em;
-  margin-bottom: 0.51851852em;
+  font-size: 2.375em;
+  line-height: 1.47368421em;
+  margin-top: 1.47368421em;
+  margin-bottom: 0.73684211em;
   	@include breakpoint(large) { 
-		font-size: 2.25em;
-		line-height: 1.555555556em;
-		margin-top: 1.55555556em;
-		margin-bottom: 0.77777778em;
+		font-size: 1.75em;
+		line-height: 1em;
+		margin-top: 2em;
+		margin-bottom: 1em;
 	}
+}
+.site-title{
+	margin-top: 1.4em;
 }
 h2 {
-  font-size: 2.25em;
-  line-height: 1.555555556em;
-  margin-top: 1.55555556em;
-  margin-bottom: 0.77777778em;
+	color: $grey;
+	font-size: 1.75em;
+	line-height: 1em;
+	margin-top: 2em;
+	margin-bottom: 1em;
 	@include breakpoint(large) { 
-		font-size: 1.5em;
-		line-height: 1.166666667em;
-		margin-top: 1.16666667em;
-		margin-bottom: 1.16666667em;
+		font-size: 1.3125em;
+		line-height: 1.333333333em;
+		margin-top: 1.33333333em;
+		margin-bottom: 1.33333333em;
 	}
 }
+
 h3 {
-  font-size: 1.5em;
-  line-height: 1.166666667em;
-  margin-top: 1.16666667em;
-  margin-bottom: 1.16666667em;
+	color: $lightgrey;
+	font-size: 1.3125em;
+	line-height: 1.333333333em;
+	margin-top: 1.33333333em;
+	margin-bottom: 1.33333333em;
 	@include breakpoint(large) { 
-		font-size: 1em;
-		line-height: 1.75em;
-		margin-top: 1.75em;
-		margin-bottom: 1.75em;
-		}
+	  font-size: 1em;
+	  line-height: 1.75em;
+	  margin-top: 1.75em;
+	  margin-bottom: 1.75em;
+	}
 }
 h4 {
-  font-size: 1em;
-  line-height: 1.75em;
-  margin-top: 1.75em;
-  margin-bottom: 1.75em;
+	  font-size: 1em;
+	  line-height: 1.75em;
+	  margin-top: 1.75em;
+	  margin-bottom: 1.75em;
+}
+h5 {
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-top: 1.33333333em;
+	margin-bottom: 1.33333333em;
 }
 p, ul, ol, pre, table, blockquote {
   margin-top: 1.75em;

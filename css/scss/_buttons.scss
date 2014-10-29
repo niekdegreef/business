@@ -39,6 +39,11 @@
 			box-shadow: none;
 		}
 	}
+	@include breakpoint(medium) { 
+		width:60%;
+		margin:0 auto;
+		float: none;
+	}
 	@include breakpoint(small) { 
 		width:100%;
 		box-shadow: none;
@@ -69,15 +74,18 @@
 
 
 header .contact {
-	@include span(3 at 9 last);
-	top:4em;
-	right:$gutter;
+	@include span(3 at 9 last split);
+	top:3.6em;
+	display: block;
+	width: span(2);
 	&:active {
 		top:4.3em;
 	}
 	@include breakpoint(medium) { 
 		font-size: 80%;
 		line-height: 2;
+		top:3em;
+		width: span(3 last);
 	}
 	@include breakpoint(small) { 
 		position: absolute;

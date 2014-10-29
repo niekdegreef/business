@@ -1,10 +1,15 @@
 .mailer {
+	background-color: rgb(255, 255, 237);
 body {
 	background-color: white;
+}
+.homelink {
+	max-width: 200px;
 }
 header#masthead, .site-content, .site-footer {
 max-width: 600px;
 margin:0 auto;
+padding:0 $padding;
 }
 header#masthead, .site-content {
 	background-color: white;
@@ -12,16 +17,13 @@ header#masthead, .site-content {
 img {
 	width:100%;
 }
-.contact {
-	padding:$padding;
-	top:0;
-	float:right;
-	box-shadow: none;
+.content-area {
+	width:100%;
 }
-#primary {
+.site-content {
 	width: 100%;
 }
-#secondary {
+.sidebar {
 	width: 100%;
 	aside {
 		margin-bottom: $gutter;
@@ -50,6 +52,9 @@ h1.site-title {
 		float: left;
 	}
 }
+.logo_showcase img {
+	max-width: 150px;
+}
 address {
 	float:left;
 	text-align: left;
@@ -57,6 +62,15 @@ address {
 .homelink {
 	position: absolute;
 }
-
+.contact {
+	padding:$padding;
+	float:right;
+	//box-shadow: none;
+	width:300px;
+	margin-top: 20px;
+}
+.site-footer {
+	float:none;
+}
 
 }

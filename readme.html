@@ -1,4 +1,4 @@
-<h1>This is my own starter theme for small business sites.</h1>
+<h1>Personal starter theme &amp; dev notes for small WP sites.</h1>
 
 <h2>Local tools</h2>
 
@@ -16,6 +16,8 @@
 
 <ul>
 <li>Typekit where necesarry</li>
+<li>Typecast</li>
+<li>Gridlover</li>
 </ul>
 
 
@@ -38,12 +40,22 @@
 <h2>File structure</h2>
 
 <ul>
-<li><h3>styles</h3></li>
-<li><p>[http://brettjankord.com/projects/style-guide-boilerplate/ OR https://github.com/adactio/Pattern-Primer]</p>
+<li><h3>styles</h3>
+
+<p>[http://brettjankord.com/projects/style-guide-boilerplate/ OR https://github.com/adactio/Pattern-Primer]</p>
 
 <ul>
 <li>index.php                  [ style guide accesible at site.styles ]</li>
 <li>style.css                  [ import from site&rsquo;s css: @import &lsquo;../../style.css&rsquo;; ]</li>
+</ul>
+</li>
+<li><h3>css</h3>
+
+<ul>
+<li><h3>css</h3>
+
+<ul>
+<li>admin.css                 [ load only if necesarry, used for custom styling of WP admin ]</li>
 </ul>
 </li>
 <li><h3>scss</h3>
@@ -54,13 +66,13 @@
 <ul>
 <li>_reset.scss            [ reset ]</li>
 <li>_normalize.scss        [ normalize (instead of reset when applicable) ]</li>
-<li>_underscores.scss      [ underscores.me style - check if necesarry, pref. copy to scss files ]</li>
+<li>_underscores.scs       [ underscores.me style - check if necesarry, pref. copy to scss files ]</li>
 <li>_susy                  [ susy https://github.com/ericam/susy ]</li>
-<li>_global.scss           [ global.scss ]</li>
-<li>_typography.scss       [ Typography rules  ]</li>
-<li>_shittybrowser.scss    [ IE rules  ]</li>
+<li>_global.scss               [ global.scss ]</li>
+<li>_typography.scs        [ Typography rules  ]</li>
+<li>_shittybrowser.scs         [ IE rules  ]</li>
 <li>_touch.scss            [ touch rules  ]</li>
-<li>_genericons.scss       [ icons ]</li>
+<li>_genericons.scss           [ icons ]</li>
 </ul>
 </li>
 <li><strong>helpers</strong>
@@ -73,8 +85,9 @@
 <li><strong>components</strong>
 
 <ul>
-<li>_navigation.scss       [ Navigation ]</li>
-<li>_buttons.scss          [ Buttons ]</li>
+<li>_components.scss           [ Reusable components ]</li>
+<li>_navigation.scss           [ Navigation ]</li>
+<li>_buttons.scss              [ Buttons ]</li>
 </ul>
 </li>
 <li><strong>layout</strong>
@@ -105,7 +118,7 @@
 
 <ul>
 <li>_slider.scss           [ slider ]</li>
-<li>_lightgallery.scss     [ lightgallery ]</li>
+<li>_lightgallery.scss         [ lightgallery ]</li>
 </ul>
 </li>
 <li><strong>quick fixes</strong>
@@ -115,14 +128,16 @@
 <li>_shame.scss</li>
 </ul>
 </li>
-<li><strong>main.scss</strong>              [ imports everything, compile compressed ]</li>
-<li><strong>admin.scss</strong>             [ for WP admin styles ]</li>
+<li><strong>main.scss</strong>              [ imports everything, don&rsquo;t compile directly ]</li>
+<li><strong>admin.scss</strong>             [ for WP admin styles compile to css/admin.css]</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><h3>js</h3>
 
 <ul>
-<li><h4>vendors</h4>
+<li><strong>vendors</strong>
 
 <ul>
 <li>_jquery.js</li>
@@ -131,7 +146,7 @@
 <li>_stellar.js</li>
 </ul>
 </li>
-<li><h4>min</h4>
+<li><strong>min</strong>
 
 <ul>
 <li>_myscripts.min.js # minified</li>
@@ -141,28 +156,28 @@
 </ul>
 </li>
 <li><h3>images</h3></li>
-<li><h3>for Wordpress sites [as per the Underscores theme https://github.com/Automattic/underscores.me]:</h3>
+<li><h3>Markup (based on Wordpress theme structure)</h3>
 
 <ul>
-<li>404.php                   #</li>
+<li>404.php               #</li>
 <li>archive.php               #</li>
 <li>comments.php              #</li>
 <li>content-none.php          #</li>
 <li>content-page.php          #</li>
-<li>content-search.php        #</li>
-<li>content-single.php        #</li>
+<li>content-search.php            #</li>
+<li>content-single.php            #</li>
 <li>content.php               #</li>
 <li>footer.php                #</li>
 <li>functions.php             #</li>
 <li>header.php                #</li>
-<li>index.php                 # start</li>
-<li>page.php                  #</li>
+<li>index.php             # start</li>
+<li>page.php              #</li>
 <li>screenshot.png            #</li>
 <li>search.php                #</li>
 <li>sidebar.php               #</li>
 <li>single.php                #</li>
-<li>style.css                 #</li>
-<li>style.scss                # imports css/css/style.css, but includes wp-theme statement at top</li>
+<li>style.css                 # style.scss compiles to this</li>
+<li>style.scss                # imports css/scss/main.css, but includes wp-theme statement, with       / * ! content */ at top, this prevents compiling into compressed by Codekit, because Wordpress needs this to recognise the theme</li>
 </ul>
 </li>
 </ul>
@@ -170,30 +185,31 @@
 
 <h3>import block:</h3>
 
-<pre><code>    @import "variables.scss";
-    @import "mixins.scss";
-    @import "susy";
-    @import "reset.scss";
-    @import "genericons.scss";
-    @import "global.scss";
-    @import "lightgallery.scss";
-    @import "underscores.scss";
-    @import "typography.scss"; 
-    @import "shittybrowser.scss";
-    @import "touch.scss";
-    @import "buttons.scss";
-    @import "navigation.scss";
-    @import "grid.scss";
-    @import "header.scss";
-    @import "footer.scss";
-    @import "sidebar.scss";
-    @import "forms.scss";
-    @import "home.scss";
-    @import "gallery.scss";
-    @import "contact.scss";
-    @import "admin.scss";
-    @import "mailer.scss";
-    @import "slider.scss";
-    @import "bits.scss";
-    @import "shame.scss";
+<pre><code>@import "susy";
+@import "variables.scss";
+@import "mixins.scss";
+@import "typography.scss"; 
+@import "reset.scss";
+@import "normalize.scss";
+@import "genericons.scss";
+@import "global.scss";
+@import "components.scss";
+@import "lightgallery.scss";
+@import "underscores.scss";
+@import "shittybrowser.scss";
+@import "touch.scss";
+@import "bits.scss";
+@import "buttons.scss";
+@import "navigation.scss";
+@import "grid.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "sidebar.scss";
+@import "forms.scss";
+@import "home.scss";
+@import "gallery.scss";
+@import "contact.scss";
+@import "mailer.scss";
+@import "slider.scss";
+@import "shame.scss";
 </code></pre>

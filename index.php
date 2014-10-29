@@ -44,9 +44,9 @@
                 <h1>Expertise</h1>
             </header>
             <section>
-                This is to boast about your awareness of the latest developments in the industry through conferences, exhibitions and presentations. Do you work with software you'd like to advertise, that can be shown here. If you're an engineering company, you'd be showing these: 
+                <p>This is to boast about your awareness of the latest developments in the industry through conferences, exhibitions and presentations. Do you work with software you'd like to advertise, that can be shown here. If you're an engineering company, you'd be showing these: </p>
             </section>
-            <aside class="widget logo_showcase">
+            <aside class="widget group logo_showcase">
             <h2>Software</h2>
 
             <img src="images/logo1.png" alt="">

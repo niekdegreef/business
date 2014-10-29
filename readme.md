@@ -36,43 +36,49 @@
 	* index.php 				 [ style guide accesible at site.styles ]
 	* style.css 				 [ import from site's css: @import '../../style.css'; ]
 
-* ### scss
-	* **base**
-		* _reset.scss 			 [ reset ] 
-		* _normalize.scss 		 [ normalize (instead of reset when applicable) ] 
-		* _underscores.scs		 [ underscores.me style - check if necesarry, pref. copy to scss files ]
-		* _susy        			 [ susy https://github.com/ericam/susy ]
-		* _global.scss        		 [ global.scss ]
-		* _typography.scs		 [ Typography rules  ]
-		* _shittybrowser.scs		 [ IE rules  ]
-		* _touch.scss   		 [ touch rules  ]
-		* _genericons.scss  		 [ icons ]
-	* **helpers**
-		* _variables.scss  		 [ Sass Variables ]
-		* _mixins.scss     		 [ Sass Mixins ]
-	* **components**
-		* _navigation.scss  		 [ Navigation ]
-		* _buttons.scss     		 [ Buttons ]
-	* **layout**
-		* _grid.scss       		 [ Grid system ]
-		* _header.scss     		 [ Header ]
-		* _footer.scss     		 [ Footer ]
-		* _sidebar.scss    		 [ Sidebar ]
-		* _forms.scss      		 [ Forms ]
-	* **pages**
-		* _home.scss      		 [ Home specific styles ]
-		* _gallery.scss   		 [ Gallery specific styles ]
-		* _contact.scss   		 [ Contact specific styles ]
-	* **themes**
-		* _mailer.scss     		 [ Mailer theme ]
-	* **vendors**
-		* _slider.scss   	 	 [ slider ]
-		* _lightgallery.scss  		 [ lightgallery ]
-	* **quick fixes**
-		* _bits.scss 
-		* _shame.scss
-	* **main.scss**				 [ imports everything, compile compressed ]
-	* **admin.scss**			 [ for WP admin styles ]
+* ### css
+
+	* ### css
+		* admin.css 				[ load only if necesarry, used for custom styling of WP admin ] 
+
+	* ### scss
+		* **base**
+			* _reset.scss 			 [ reset ] 
+			* _normalize.scss 		 [ normalize (instead of reset when applicable) ] 
+			* _underscores.scs		 [ underscores.me style - check if necesarry, pref. copy to scss files ]
+			* _susy        			 [ susy https://github.com/ericam/susy ]
+			* _global.scss        		 [ global.scss ]
+			* _typography.scs		 [ Typography rules  ]
+			* _shittybrowser.scs		 [ IE rules  ]
+			* _touch.scss   		 [ touch rules  ]
+			* _genericons.scss  		 [ icons ]
+		* **helpers**
+			* _variables.scss  		 [ Sass Variables ]
+			* _mixins.scss     		 [ Sass Mixins ]
+		* **components**
+			* _components.scss  		 [ Reusable components ]
+			* _navigation.scss  		 [ Navigation ]
+			* _buttons.scss     		 [ Buttons ]
+		* **layout**
+			* _grid.scss       		 [ Grid system ]
+			* _header.scss     		 [ Header ]
+			* _footer.scss     		 [ Footer ]
+			* _sidebar.scss    		 [ Sidebar ]
+			* _forms.scss      		 [ Forms ]
+		* **pages**
+			* _home.scss      		 [ Home specific styles ]
+			* _gallery.scss   		 [ Gallery specific styles ]
+			* _contact.scss   		 [ Contact specific styles ]
+		* **themes**
+			* _mailer.scss     		 [ Mailer theme ]
+		* **vendors**
+			* _slider.scss   	 	 [ slider ]
+			* _lightgallery.scss  		 [ lightgallery ]
+		* **quick fixes**
+			* _bits.scss 
+			* _shame.scss
+		* **main.scss**				 [ imports everything, don't compile directly ]
+		* **admin.scss**			 [ for WP admin styles compile to css/admin.css]
 
 * ### js
 	* **vendors**
@@ -86,7 +92,7 @@
 
 * ### images
 
-* ### for Wordpress sites 
+* ### Markup (based on Wordpress theme structure) 
 [as per the Underscores theme https://github.com/Automattic/underscores.me]:
 
 	* 404.php				#
@@ -106,34 +112,35 @@
 	* search.php				#
 	* sidebar.php				#
 	* single.php				#
-	* style.css				#
-	* style.scss				# imports css/css/style.css, but includes wp-theme statement at top 
+	* style.css					# style.scss compiles to this
+	* style.scss				# imports css/scss/main.css, but includes wp-theme statement, with       / * ! content */ at top, this prevents compiling into compressed by Codekit, because Wordpress needs this to recognise the theme
 
 ### import block:
 
-		@import "variables.scss";
-		@import "mixins.scss";
-		@import "susy";
-		@import "reset.scss";
-		@import "genericons.scss";
-		@import "global.scss";
-		@import "lightgallery.scss";
-		@import "underscores.scss";
-		@import "typography.scss"; 
-		@import "shittybrowser.scss";
-		@import "touch.scss";
-		@import "buttons.scss";
-		@import "navigation.scss";
-		@import "grid.scss";
-		@import "header.scss";
-		@import "footer.scss";
-		@import "sidebar.scss";
-		@import "forms.scss";
-		@import "home.scss";
-		@import "gallery.scss";
-		@import "contact.scss";
-		@import "admin.scss";
-		@import "mailer.scss";
-		@import "slider.scss";
-		@import "bits.scss";
-		@import "shame.scss";
+	@import "susy";
+	@import "variables.scss";
+	@import "mixins.scss";
+	@import "typography.scss"; 
+	@import "reset.scss";
+	@import "normalize.scss";
+	@import "genericons.scss";
+	@import "global.scss";
+	@import "components.scss";
+	@import "lightgallery.scss";
+	@import "underscores.scss";
+	@import "shittybrowser.scss";
+	@import "touch.scss";
+	@import "bits.scss";
+	@import "buttons.scss";
+	@import "navigation.scss";
+	@import "grid.scss";
+	@import "header.scss";
+	@import "footer.scss";
+	@import "sidebar.scss";
+	@import "forms.scss";
+	@import "home.scss";
+	@import "gallery.scss";
+	@import "contact.scss";
+	@import "mailer.scss";
+	@import "slider.scss";
+	@import "shame.scss";

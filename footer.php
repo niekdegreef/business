@@ -1,5 +1,6 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="centre-wrapper group">
+        
         <nav class="footer-nav">
 <!--             <img src="../images/logo.png" alt="">
  -->            <div class="quick-menu">
@@ -24,18 +25,12 @@
             South Africa <br>
             www.beyerdegreef.com  
         </address>
-
         <div class="site-info" >
             <span>
                 This is an example of a <a href="http://beyerdegreef.com">Beyer de Greef</a> 
                 website, for demo purposes only. 
            </span>
-           <h1>
-               This is our business template
-           </h1>
         </div>
-
-
     </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->

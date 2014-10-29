@@ -18,16 +18,16 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic' rel='stylesheet' type='text/css'>  
 
     </head>
-    <body class="mailer">
+<body class="mailer">
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 <div id="page" class="hfeed site">
 
-<a class="homelink" href="/"><img src="business-styles/images/home.jpg" width="200" alt=""></a>
+<a class="homelink" href="/business-template"><img src="images/home.jpg" width="200" alt=""></a>
     
     <header id="masthead" class="site-header group" role="banner">
-        <h1 class="site-title"><a href="/" rel="home"><img src="business-styles/images/logo.png" alt=""></a></h1>
+        <h1 class="site-title"><a href="/" rel="home"><img src="images/logo.png" alt=""></a></h1>
         
         <a class="contact" href="#">
             <p>contact us for more information</p>
@@ -63,7 +63,7 @@
                 <a id="1"></a>
                 <h2>News</h2>
                 <figure>
-                    <img src="business-styles/images/products.jpg" alt="">
+                    <img src="images/products.jpg" alt="">
                 </figure>
                 <p>
                 BDG specialises in Machine building &amp; architecture. This text is only here for the purpose of showing you a full paragraph. With a lot of practical knowledge and a fresh perspective, we look at your product. Together we work out your ideas without having your own engineering department before being charged extra. In preliminary studies, detailed drawings, modifications to existing equipment or structures; In all these cases, you can appeal to the designers of our company. We create technically correct designs &amp; animations of working machines.
@@ -74,7 +74,7 @@
                  <a id="2"></a>
                 <h2>Careers</h2>
                 <figure>
-                    <img src="business-styles/images/products1.jpg" alt="">
+                    <img src="images/products1.jpg" alt="">
                 </figure>
                 <p>
                 BDG specialises in Technical installations &amp; designs. This text is only here for the purpose of showing you a full paragraph. With a lot of practical knowledge and a fresh perspective, we look at your product. In preliminary studies, detailed drawings, modifications to existing equipment or structures; In all these cases, you can appeal to the designers of our company. We create technically correct designs &amp; animations of working machines.
@@ -85,7 +85,7 @@
                  <a id="3"></a>
                 <h2>Availability</h2>
                 <figure>
-                    <img src="business-styles/images/products2.jpg" alt="">
+                    <img src="images/products2.jpg" alt="">
                 </figure>
                 <p>
                 BDG specialises in Electrical installations. This text is only here for the purpose of showing you a full paragraph. With a lot of practical knowledge and a fresh perspective, we look at your product. In preliminary studies, detailed drawings, modifications to existing equipment or structures; In all these cases, you can appeal to the designers of our company. We create technically correct designs &amp; animations of working machines.
@@ -103,18 +103,18 @@
 
     </div><!-- #primary -->
 
-    <div id="secondary" class=" secondary widget-area" role="complementary">
+    <div id="secondary" class="sidebar widget-area" role="complementary">
 
         <aside class="widget logo_showcase group">
             <h2>Software</h2>
 
-            <img src="business-styles/images/logo1.png" alt="">
-            <img src="business-styles/images/logo2.png" alt="">
-            <img src="business-styles/images/logo3.png" alt="">
-            <img src="business-styles/images/logo4.png" alt="">
-            <img src="business-styles/images/logo5.png" alt="">
-            <img src="business-styles/images/logo6.png" alt="">
-            <img src="business-styles/images/logo7.png" alt="">
+            <img src="images/logo1.png" alt="">
+            <img src="images/logo2.png" alt="">
+            <img src="images/logo3.png" alt="">
+            <img src="images/logo4.png" alt="">
+            <img src="images/logo5.png" alt="">
+            <img src="images/logo6.png" alt="">
+            <img src="images/logo7.png" alt="">
             
         </aside>
         <a id="4"></a>
@@ -123,7 +123,7 @@
             <ul>
                 <li>
                     <figure>
-                        <a href="#"><img src="business-styles/images/video1.png" alt=""></a>
+                        <a href="#"><img src="images/video1.png" alt=""></a>
                     </figure>
                     <figcaption>
                         <h3>Revit 3D Autocad project</h3>
@@ -134,7 +134,7 @@
                 <h3>YouTu be channel</h3>
                    <a href="#">
                   
-                    <img style="max-width:120px" src="business-styles/images/youtube.png" alt="youtube channel" width="100"></a>
+                    <img style="max-width:120px" src="images/youtube.png" alt="youtube channel" width="100"></a>
                </li>
             </ul>
         </aside>

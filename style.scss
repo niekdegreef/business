@@ -1,6 +1,9 @@
-/*theme statement
+/*! theme statement
 *
 *this structure allows for the WP theme statement to remain in place, while using minified code below
 *
 */
-@import 'css/style.scss';
+@import 'css/scss/main.scss';
+
+// body {
+//   background-color: green; }

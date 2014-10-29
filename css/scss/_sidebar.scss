@@ -1,0 +1,32 @@
+.sidebar {
+	// max-width: span(4 right);
+	@include span(4 last);
+	@include breakpoint(medium) { 
+		clear:both;
+		width:100%
+	}
+}
+.sidebar aside {
+	margin-bottom: $gutter;
+}
+
+.news {
+	// background-color: red;
+	padding: $padding;
+	margin:0;
+	margin-top: $gutter*3;
+	// margin-right:-$gutter;
+	border: 1px solid $primary;
+	border-right: $padding solid $primary;
+	h2 {
+		margin-top: 0;
+	}
+	&:hover {
+		// box-shadow: 0px 0px 5px red;
+		border: 1px solid red;
+		border-right: $padding solid red;
+	}
+}
+.reallign {
+	//margin-top:$gutter*3;
+}

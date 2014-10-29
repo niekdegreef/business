@@ -13,7 +13,8 @@
 		// @include span(6);
 	}
 	@include breakpoint(medium) { 
-		// @include span(9);
+		@include span(8);
+		padding-top: $gutter;
 	}
 	@include breakpoint(small) { 
 		float:right;
@@ -22,8 +23,9 @@
 	}
 }
 .utility {
-	position: absolute;
-	right:$gutter;
+	@include span(6 of 12);
+	float: right;
+	text-align: right;
 	padding-top: $padding;
 	font-size: 90%;
 	ul {
@@ -49,6 +51,8 @@
 		}
 		&:last-of-type:after {
 				content:'';
+				margin-right:-.5em;
+				padding-right: 0;
 		}
 	}
 	@include breakpoint(medium) { 
@@ -80,20 +84,19 @@
 	float:left;
 	width: 100%;
 	@include breakpoint(medium) { 
-		float:left;
-		margin-left: $gutter; 
 	}
 }
 .main-navigation li {
 	text-transform: uppercase;
 	font-size: 90%;
 	display: inline-block;
-	margin-right:$gutter;
+	margin-left: gutter(6); //susy gutter, 25% of a 6 column-grid column = 2 x 12 column-grid gutters
 	float: left;
 	letter-spacing:1px;
 	@include breakpoint(medium) { 
 		margin-right:$gutter*.5;
 		font-size: 75%;
+		margin-left:0;
 		padding-top:.5em;
 		float: left;
 	}
@@ -181,29 +184,7 @@ li.current-menu-item a {
 		}
 	}
 }
-.footer-nav {
-	ul {
-		columns:2;
-		margin:0 $gutter*2 0 0 ;
-		@include h-text;
-		@include breakpoint(medium) { 
-			width:100%;
-		}
-	}
-	li {
-		margin-right:$gutter*5;
-		a {
-			text-decoration: none;
-			border:none;
-		}
-		@include breakpoint(medium) { 
-			margin-right:$gutter*2;
-		}
-		@include breakpoint(small) { 
-			margin-right:$gutter;
-		}
-	}
-}
+
 .quick-menu {
 	float:left;
 }
