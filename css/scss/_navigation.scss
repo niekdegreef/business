@@ -13,12 +13,11 @@
 		// @include span(6);
 	}
 	@include breakpoint(medium) { 
-		@include span(8);
+		@include span(6);
 		padding-top: $gutter;
 	}
 	@include breakpoint(small) { 
 		float:right;
-		width:10em;
 		top: $gutter;
 	}
 }
@@ -62,15 +61,18 @@
 		}
 	}
 	@include breakpoint(small) { 
-		font-size: 80%;
+		@include span(8 of 12);
+		font-size: 70%;
+		float: right;
+		margin-right: $gutter;
+		margin-bottom: $gutter;
+		padding-top:0em;
 		display: block;
-		width:100%;
-		right:0;
 		li {
 			margin-left: 0;
 		}
 		ul {
-			margin-left:$padding;
+			//margin-left:$padding;
 		}
 		li a {
 			margin-left:0;	
@@ -104,6 +106,7 @@
 		display: inline-block;
 		clear: both;
 		text-transform: none;
+		font-weight: 300;
 	}
 }
 li.current-menu-item a {
@@ -141,11 +144,12 @@ li.current-menu-item a {
 	display: none;
 	width:10em;
 	position: absolute;
-	top:$gutter;
+	top:-1.5em;
 	right:$padding*2;
 	float: right;
-	line-height: 2;
+	line-height: 1.2;
 	text-align: right;
+	padding-right: 5px;
 	margin-top:$gutter;
 	.genericon {
 		font-size: 32px;
@@ -165,6 +169,8 @@ li.current-menu-item a {
 }
 .main-navigation.toggled  {
 	position: relative;
+	width:100%;
+	top: -.9em;
 }
 .toggled .menu-toggle {
 	width:100%;
@@ -174,13 +180,21 @@ li.current-menu-item a {
 	width:100%;
 	float:left;
 	margin-left:0;
-	margin-bottom:$gutter*2;
+	margin-top:$gutter*2;
+	margin-bottom:$gutter;
+	padding-right: $padding;
 	li {
 		font-size: 80%;
 		width:100%;
-		text-align: right;
+		border-bottom: 1px solid $lightgrey;
+		text-align: center;
+		&:hover {
+			background-color: $lightergrey;
+			color:black;
+		}
 		a {
 			width: 100%;
+
 		}
 	}
 }

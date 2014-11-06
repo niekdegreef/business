@@ -14,22 +14,20 @@
             </header>
 
             <section>
-                <img src="business-styles/images/caro.jpg" alt="">
+                <img src="images/caro.jpg" alt="">
                 <h2>Caro de Greef <br> 
                     <span>Mrs technical director</span>
                 </h2>
-                    
                 <p>
                     this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
             </section>
 
             <section>
-                  <img src="business-styles/images/niek.jpg" alt="">
+                  <img src="images/niek.jpg" alt="">
                   <h2>Niek de Greef <br> 
                     <span>Mr operations director</span>
                 </h2>
-                  
                 <p>
                     this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
@@ -39,7 +37,7 @@
                 <h2>Jimmy Worker <br>
                     <span>Administrative assistant</span>
                 </h2>
-                    <img src="business-styles/images/caro.jpg" alt="">
+                    <img src="images/caro.jpg" alt="">
                 <p>
                     this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
@@ -49,7 +47,7 @@
                 <h2>Jimmy Worker <br>
                     <span>Administrative assistant</span>
                 </h2>
-                    <img src="business-styles/images/niek.jpg" alt="">
+                    <img src="images/niek.jpg" alt="">
                 <p>
                     this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
@@ -57,9 +55,9 @@
 
             <section>
                 <h2>Jimmy Worker <br>
-                    <span>Technical worker</span>
+                    <span>Account manager</span>
                 </h2>
-                    <img src="business-styles/images/caro.jpg" alt="">
+                    <img src="images/caro.jpg" alt="">
                 <p>
                     this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
@@ -67,9 +65,9 @@
 
             <section>
                 <h2>Jimmy Worker <br>
-                    <span>Technical worker</span>
+                    <span>Account manager</span>
                 </h2>
-                    <img src="business-styles/images/niek.jpg" alt="">
+                    <img src="images/niek.jpg" alt="">
                 <p>
                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
@@ -77,9 +75,9 @@
 
             <section>
                 <h2>Jimmy Worker <br>
-                    <span>Technical worker</span>
+                    <span>Account manager</span>
                 </h2>
-                    <img src="business-styles/images/caro.jpg" alt="">
+                    <img src="images/caro.jpg" alt="">
                 <p>
                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>
@@ -87,9 +85,9 @@
 
             <section>
                 <h2>Jimmy Worker <br>
-                    <span>Technical worker</span>
+                    <span>Account manager</span>
                 </h2>
-                    <img src="business-styles/images/niek.jpg" alt="">
+                    <img src="images/niek.jpg" alt="">
                 <p>
                     this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
                </p>

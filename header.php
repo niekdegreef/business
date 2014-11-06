@@ -23,6 +23,8 @@
 <div id="page" class="hfeed site">
 
     <header id="masthead" class="site-header group" role="banner">
+        <div class="centre-wrapper group">
+            
         <div class="site-branding">
             <h1 class="site-title"><a href="/" rel="home"><img src="images/logo.png" alt=""></a></h1>
         </div>
@@ -39,21 +41,21 @@
 
             <div class="menu-menu-1-container">
                 <ul id="menu-menu-1" class="menu nav-menu">
-                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
-                        <a href="project.php">Projects &amp; services
+                    <a href="project.php"><li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
+                        Projects &amp; services
                         <br>
-                           <span>Project listing template</span></a>
-                    </li>
+                           <span>Project listing template</span>
+                    </li></a>
                     <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
-                        <a href="page.php">About this site
+                    <a href="page.php">    About this site
                         <br>
-                           <span>Template features</span></a>
-                    </li>
-                    <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
-                        <a href="people.php">People
+                           <span>Template features</span>
+                    </li></a>
+                    <a href="people.php"><li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
+                        People
                         <br>
-                           <span>People listing template</span></a>
-                    </li>
+                           <span>People listing template</span>
+                    </li></a>
                 </ul>
             </div>
 
@@ -67,5 +69,5 @@
             <span class="genericon genericon-mail"></span>
       
         </a>
-
+        </div>
     </header><!-- #masthead -->

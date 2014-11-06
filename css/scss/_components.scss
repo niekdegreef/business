@@ -5,8 +5,8 @@ article section {
 	&:after {
 		content: ' ';
 		display: block;
-		width: 50%;
-		margin: 0 25%;
+		width: 80%;
+		// margin: 0 10%;
 		height: 0px;
 		// background-color: red;
 		text-align: center;
@@ -36,7 +36,6 @@ article.people {
 .video_showcase li {
 	margin-bottom:$gutter*2; 
 	max-width: 100%;
-
 	@include breakpoint(medium) { 
 		max-width: 47.5%;
 		display: inline-block;
@@ -45,10 +44,9 @@ article.people {
 			float:right;
 			@include breakpoint(small) { 
 				float:left;
-			}
 		}
 	}
-
+}
 	@include breakpoint(small) { 
 		max-width: 100%;
 		float:left;

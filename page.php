@@ -24,8 +24,6 @@
                     <li>General page template</li>
                     <li>News or blog template</li>
                     <li>E-mail template</li>
-                    <li></li>
-                    <li></li>
                 </ul>
 
             </section>

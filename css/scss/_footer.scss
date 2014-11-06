@@ -1,7 +1,7 @@
 .site-footer {
 	position: relative;
 	.centre-wrapper {
-		@include container($large);
+		@include container($xlarge);
 	}
 	img {
 		max-width: 10em;
@@ -30,7 +30,7 @@ nav.footer-nav {
 	display:block;
 	margin-top:$gutter*2;
 	@include h-text;
-	background: white url("images/crown.png")no-repeat right;
+	background: rgba(255, 255, 255, 0.29) url("images/crown.png")no-repeat right;
 	// box-shadow: 0 0 50px $grey;
 	clear:both;
 	float:right;
@@ -39,6 +39,7 @@ nav.footer-nav {
 	width:100%;
 	text-align: right;
 	color:$black;
+	margin-bottom:$gutter*3;
 	position: relative;
 	span {
 		text-align: left;

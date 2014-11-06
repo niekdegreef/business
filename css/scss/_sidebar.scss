@@ -1,6 +1,6 @@
 .sidebar {
 	// max-width: span(4 right);
-	@include span(4 last);
+	@include span(3 last);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%
@@ -9,24 +9,43 @@
 .sidebar aside {
 	margin-bottom: $gutter;
 }
-
-.news {
-	// background-color: red;
-	padding: $padding;
+.feature {
+	padding: $padding 0;
 	margin:0;
 	margin-top: $gutter*3;
-	// margin-right:-$gutter;
-	border: 1px solid $primary;
-	border-right: $padding solid $primary;
-	h2 {
-		margin-top: 0;
+	text-transform: uppercase;
+	font-size: 80%;
+	border-bottom: 1px solid $primary;
+	@include breakpoint(large) { 
+		margin-top: $gutter*2;
 	}
-	&:hover {
-		// box-shadow: 0px 0px 5px red;
-		border: 1px solid red;
-		border-right: $padding solid red;
+	a {
+		display: block;
+		width: 100%;
+		float: left;
+		clear: both;
+		margin-bottom: $padding;
+	}
+	h2 {
+		margin-top: .45em;
+		@include breakpoint(large) { 
+			margin-top: .8em;
+		}
+	}
+	h3 {
+		letter-spacing: 1px;
+		margin-bottom: 0em;
+		font-size: 95%;
+		margin-top: 0;
+		float: left;
+		max-width: 70%;
+		display: block;
+	}
+	time {
+		float: right;
+		max-width: 30%;
+		display: block;
 	}
 }
 .reallign {
-	//margin-top:$gutter*3;
 }

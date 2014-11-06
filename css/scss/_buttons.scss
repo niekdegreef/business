@@ -79,22 +79,21 @@ header .contact {
 	display: block;
 	width: span(2);
 	&:active {
-		top:4.3em;
+		top:3.8em;
 	}
 	@include breakpoint(medium) { 
-		font-size: 80%;
-		line-height: 2;
-		top:3em;
+		// font-size: 80%;
+		// line-height: 2;
+		top:2em;
 		width: span(3 last);
 	}
 	@include breakpoint(small) { 
 		position: absolute;
-		top:0;
+		top:$padding*3;
 		background-color: transparent;
 		right:0;
-		width:3em;
-		height:3em;
-		bottom:0;
+		margin:0;
+		padding: 0;
 		margin-top:0;
 		&:hover, &:active {
 			background-color: transparent;

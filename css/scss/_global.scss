@@ -11,23 +11,20 @@ img { width:100%}
 body {
 	background-repeat: no-repeat;
 } 
-.site-content {
-	// background-color: red;
-	border-top: 1px solid $secondaryAlt;
-	padding-top:$gutter*2;
-	// @include centrethis;
-
+.centre-wrapper {
 	@include container($xlarge);
-
-	@include breakpoint(large) { 
-		
-	}
+}
+.site-header {
+	border-bottom: 1px solid $secondaryAlt;
+}
+.site-content {
+	padding-top:$gutter*2;
+	@include container($xlarge);
 	@include breakpoint(medium) { 
 		padding-top:$gutter;
 		border:none;
 	}
 	@include breakpoint(small) { 
-		border-top: 1px solid $secondaryAlt;
 	}
 }
 .site-content.home{
@@ -77,10 +74,8 @@ section {
 
 /* Alignment */
 .centre-wrapper {
-	@include centrethis;
+	//@include centrethis;
 
-	@include breakpoint(medium) { 
-	}
 }
 .alignleft {
 	display: inline;

@@ -1,12 +1,14 @@
     <div id="secondary" class="sidebar widget-area" role="complementary">
 
-        <aside class="reallign widget news group">
+        <aside class="reallign widget feature group">
             <h2>News</h2>
 
             <article>
-                <a href=""><h3>Title of news item</h3></a> 
-                <p>Body</p>
+                <a href=""><h3>Title of news itemTitle of news item</h3> <time>12-12-2014</time></a> 
+            </article>
 
+              <article>
+                <a href=""><h3>Title of news item</h3> <time>12-12-2014</time></a> 
             </article>
              
         </aside>
