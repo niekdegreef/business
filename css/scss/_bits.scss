@@ -20,14 +20,12 @@
 	@include breakpoint(small) { 
 		min-height: 20em;
 	}
-
 }
 .banner_caption {	
-	transition: left .3s ease;
-	left:3em;
 	display: block;
 	background-color: rgba(255, 255, 255, 0.85);
 	position: absolute;
+	left:0;
 	border-left: $padding solid $secondary;
 	max-width: 60%;
 	bottom:$gutter;
