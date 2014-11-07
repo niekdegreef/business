@@ -4,7 +4,7 @@
 	background-color: $lightergrey;
 	@include breakpoint(medium) { 
 		clear:both;
-		width:100%
+		width:100%;
 	}
 }
 .sidebar aside {
