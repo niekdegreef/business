@@ -1,6 +1,7 @@
 .sidebar {
 	// max-width: span(4 right);
-	@include span(3 last);
+	@include span(3 of 12 split last);
+	padding: 0 1.3888888889%;
 	background-color: $lightergrey;
 	@include breakpoint(medium) { 
 		clear:both;
@@ -46,6 +47,8 @@
 		float: right;
 		max-width: 30%;
 		display: block;
+		line-height: 1em;
+		padding-top: 2px;
 	}
 }
 .reallign {
