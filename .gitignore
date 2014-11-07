@@ -13,4 +13,5 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 .sass-cache/
 .sass-cache
+.json
 config.codekit
