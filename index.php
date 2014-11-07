@@ -1,16 +1,8 @@
-<?php include 'header.php' ?>
-    <div class="banner group"> <!-- use background images -->
-        
-<!-- <iframe width="100%" height="600px" src="//www.youtube.com/embed/XlP6YT2sylI" frameborder="0"></iframe> -->
-
-        <div class="banner_caption bounce">
-            <p>BDG business is a website template by <a href="http://beyerdegreef.com">Beyer de Greef</a> featuring clean typography: Roboto, (or, with Typekit, Nimbus-sans &amp; Calluna ) bold design</p>
-        </div>
-    </div>
-
-    <div id="content" class="site-content home group">
-
-    <!-- end header -->
+<?php
+/**
+ * The main template file. @package business
+ */
+get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
