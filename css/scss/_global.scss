@@ -19,7 +19,7 @@ body {
 }
 .site-content {
 	padding-top:$gutter*2;
-	@include container($xlarge);
+	@include container($xlarge inside);
 	@include breakpoint(medium) { 
 		padding-top:$gutter;
 		border:none;
@@ -32,7 +32,7 @@ body {
 }
 .content-area {
 	float:left;
-	@include span(8);
+	@include span(8 split);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%;
