@@ -1,18 +1,36 @@
-    <div id="secondary" class="sidebar widget-area" role="complementary">
+<?php
+/**
+ * The sidebar containing the main widget area.
+ *
+ * @package business
+ */
+
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+    return;
+}
+?>
+
+   <div id="secondary" class="sidebar widget-area" role="complementary">
+
+        <?php dynamic_sidebar( 'sidebar-1' ); ?>
+
+        <!-- use widgets to show latest news items -->
 
         <aside class="reallign widget feature group">
-            <h2>News</h2>
+          
+                <h2>News</h2>
 
-            <article>
-                <a href=""><h3>Title of news itemTitle of news item</h3> <time>12-12-2014</time></a> 
-            </article>
+                <article>
+                    <a href=""><h3>Title of news itemTitle of news item</h3> <time>12-12-2014</time></a> 
+                </article>
 
-              <article>
-                <a href=""><h3>Title of news item</h3> <time>12-12-2014</time></a> 
-            </article>
+                <article>
+                    <a href=""><h3>Title of news item</h3> <time>12-12-2014</time></a> 
+                </article>
              
         </aside>
 
+        <!-- use widgets to show cpt's with category of featured -->
 
         <aside class="widget video_showcase group">
             <h2 class="widget-title">Showcase</h2>
