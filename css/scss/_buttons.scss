@@ -95,9 +95,11 @@ header .contact {
 		margin:0;
 		padding: 0;
 		margin-top:0;
-		&:hover, &:active {
+	&:hover, &:active {
 			background-color: transparent;
+			box-shadow: none;
 		}
+		
 		p {
 			display: none
 		}

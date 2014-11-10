@@ -1,11 +1,11 @@
 .sidebar {
-	// max-width: span(4 right);
 	@include span(3 of 12 split last);
-	padding: 0 1.3888888889%;
-	background-color: $lightergrey;
+		padding: 0 1.3888888889%;
+		background-color: $lightergrey;
 	@include breakpoint(medium) { 
-		clear:both;
-		width:100%;
+	
+	@include span(12 split);
+		
 	}
 }
 .sidebar aside {

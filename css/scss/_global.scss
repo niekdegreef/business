@@ -35,10 +35,9 @@ body {
 	@include span(8 split);
 	@include breakpoint(medium) { 
 		clear:both;
-		width:100%;
+		@include span(12 split);
 	}
 }
-
 article header {
 	margin-bottom: $gutter*2;
 }
@@ -58,9 +57,6 @@ article header {
 }
 section {
 	margin-bottom: $gutter;
-}
-.widget {
-	
 }
 .site-footer {
 	clear: both;

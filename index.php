@@ -4,7 +4,7 @@
 <!-- <iframe width="100%" height="600px" src="//www.youtube.com/embed/XlP6YT2sylI" frameborder="0"></iframe> -->
 
         <div class="banner_caption bounce">
-            <p>BDG business is a website template by <a href="http://beyerdegreef.com">Beyer de Greef</a> featuring clean typography: Roboto, (or, with Typekit, Nimbus-sans &amp; Calluna ) bold design</p>
+            <p>BDG business is a website template by <a href="http://beyerdegreef.com">Beyer de Greef</a> featuring clean typography: Roboto, (or, with Typekit, Nimbus-sans &amp; Calluna )</p>
         </div>
     </div>
 
