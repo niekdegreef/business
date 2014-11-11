@@ -144,3 +144,5 @@
 	@import "mailer.scss";
 	@import "slider.scss";
 	@import "shame.scss";
+
+[ ![Codeship Status for niekdegreef/business](https://codeship.com/projects/51af2f80-4c04-0132-7740-268f2fab66e4/status)](https://codeship.com/projects/46932)
