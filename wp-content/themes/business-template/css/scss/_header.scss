@@ -1,0 +1,44 @@
+.site-header {
+	margin-bottom: $gutter;
+	padding-bottom: $gutter;
+	@include breakpoint(medium) { 
+	}
+	@include breakpoint(small) { 
+		min-height:$gutter*4;
+		margin-bottom:$padding;
+	}
+}
+.site-branding {
+	float:left;
+	@include breakpoint(medium) { 
+		@include span (2);
+		top:0;
+	}
+	@include breakpoint(small) { 
+		clear:both;
+		@include span (3);
+		position: relative;
+		top:$gutter;
+	}	
+}
+.site-title {
+	border:none;
+	margin-bottom: 0;
+	font-size: 3em;
+	@include breakpoint(medium) { 
+		margin-top:0;
+	}
+	a {
+		border:none
+	}
+	img {
+		@include span(7 before);
+			@include breakpoint(medium) { 
+				max-width: 100%;
+				width:2.25em;
+			}
+	}
+	@include breakpoint(small) { 
+		margin-bottom: 1em;
+		}
+}

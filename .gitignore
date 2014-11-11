@@ -12,8 +12,8 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 _sass-cache/
-wp-content/
 wp-includes/
+plugins/
 wp-admin/
 *.sass-cache
 *.json
