@@ -1,39 +1,26 @@
-<?php include 'header.php' ?>
+<?php
+/**
+ * @package business
+ */
+
+get_header(); ?>
     
-
-    <div id="content" class="site-content group">
-
-    <!-- end header -->
-
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        <article class="projects">
-            <header>
-                <h1>Template features</h1>
-            </header>
-            <section>
-                <h2>Small business template</h2>
-                <ul>
-                    <li>Custom designed header</li>
-                    <li>Header area can be video, slider or large image</li>
-                    <li>Responsive; resize the window and see the site adapt</li>
-                    <li>Home-page template</li>
-                    <li>People or staff-template</li>
-                    <li>Projects template</li>
-                    <li>General page template</li>
-                    <li>News or blog template</li>
-                    <li>E-mail template</li>
-                </ul>
+            <?php while ( have_posts() ) : the_post(); ?>
 
-            </section>
-        </article>
+                <?php get_template_part( 'content', 'page' ); ?>
 
-        <a class="contact" href="#">
-            <p>contact us for more information about available personel &amp; software packages</p>
-            <span class="genericon genericon-mail"></span>
-        </a>
-        
+                <?php
+                    // If comments are open or we have at least one comment, load up the comment template
+                    if ( comments_open() || get_comments_number() ) :
+                        comments_template();
+                    endif;
+                ?>
+
+            <?php endwhile; // end of the loop. ?>
+
         </main><!-- #main -->
 
     </div><!-- #primary -->

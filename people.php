@@ -1,110 +1,54 @@
-<?php include 'header.php' ?>
-    
-
-    <div id="content" class="site-content group">
-
-    <!-- end header -->
+<?php
+/**
+* template name: People listing 
+* @package business
+*/
+get_header(); ?> 
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        <article class="people">
-            <header>
-                <h1>This is us</h1>
-            </header>
+        <?php if ( have_posts() ) : ?>
 
-            <section>
-                <img src="images/caro.jpg" alt="">
-                <h2>Caro de Greef <br> 
-                    <span>Mrs technical director</span>
-                </h2>
-                <p>
-                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
+            <?php /* Start the Loop for first column take content from home-page, ACF repeater field*/ ?>
+                <article class="people">
+                
+                <header>
+                    <h1><?php the_title() ?></h1>
+                </header>
 
-            <section>
-                  <img src="images/niek.jpg" alt="">
-                  <h2>Niek de Greef <br> 
-                    <span>Mr operations director</span>
-                </h2>
-                <p>
-                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
 
-            <section>
-                <h2>Jimmy Worker <br>
-                    <span>Administrative assistant</span>
-                </h2>
+            <?php while ( have_posts() ) : the_post(); ?>
+
+                <section>
                     <img src="images/caro.jpg" alt="">
-                <p>
-                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
+                    <h2><?php get_field('name') ?><br> 
+                        <span><?php get_field('function') ?></span>
+                    </h2>
+                    <img src=" <?php get_field('profile') ?> " alt="">
+                    <p><?php get_field('bio') ?></p>
+                        
+                </section>
 
-                        <section>
-                <h2>Jimmy Worker <br>
-                    <span>Administrative assistant</span>
-                </h2>
-                    <img src="images/niek.jpg" alt="">
-                <p>
-                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
+            <?php endwhile; ?>
 
-            <section>
-                <h2>Jimmy Worker <br>
-                    <span>Account manager</span>
-                </h2>
-                    <img src="images/caro.jpg" alt="">
-                <p>
-                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
+                </article>
+        
+        <?php endif; ?> 
 
-            <section>
-                <h2>Jimmy Worker <br>
-                    <span>Account manager</span>
-                </h2>
-                    <img src="images/niek.jpg" alt="">
-                <p>
-                   this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
 
-            <section>
-                <h2>Jimmy Worker <br>
-                    <span>Account manager</span>
-                </h2>
-                    <img src="images/caro.jpg" alt="">
-                <p>
-                   this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
-
-            <section>
-                <h2>Jimmy Worker <br>
-                    <span>Account manager</span>
-                </h2>
-                    <img src="images/niek.jpg" alt="">
-                <p>
-                    this person is great at this &amp; this Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, odit, molestiae voluptatem veniam magni laudantium et ab necessitatibus quidem architecto quasi sapiente provident ad unde expedita illum repudiandae. Reiciendis, officiis.
-               </p>
-            </section>
-
-        </article>
-
-        <a class="contact" href="#">
+    <!--     <a class="contact" href="#">
             <p>contact us for more information about available personel &amp; software packages</p>
             <span class="genericon genericon-mail"></span>
-        </a>
+        </a> -->
         
         </main><!-- #main -->
 
     </div><!-- #primary -->
 
-   <?php include 'sidebar.php' ?>
+
+    <?php get_sidebar(); ?>
 
     </div><!-- #content -->
-<?php include 'footer.php' ?>
+
+<?php get_footer(); ?>
