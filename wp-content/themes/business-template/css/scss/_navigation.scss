@@ -16,10 +16,6 @@
 		@include span(6);
 		padding-top: $gutter;
 	}
-	@include breakpoint(small) { 
-		float:right;
-		top: $gutter;
-	}
 }
 .utility {
 	@include span(6 of 12);
@@ -61,9 +57,10 @@
 		}
 	}
 	@include breakpoint(small) { 
-		@include span(8 of 12);
+		@include span(7 of 12);
 		font-size: 70%;
-		float: right;
+		float: left;
+		text-align: left;
 		margin-right: $gutter;
 		margin-bottom: $gutter;
 		padding-top:0em;
@@ -142,38 +139,42 @@ li.current-menu-item a {
 .menu-toggle {
 	cursor: pointer;
 	display: none;
-	width:10em;
+	border:none;
+	background-color: transparent;
+	height:auto;
 	position: absolute;
-	top:-1.5em;
-	right:$padding*2;
+	top:-2.1em;
+	right:$padding;
 	float: right;
+	font-size: 1.8em;
 	line-height: 1.2;
 	text-align: right;
 	padding-right: 5px;
 	margin-top:$gutter;
 	.genericon {
 		font-size: 32px;
+		width: 32px;
 		margin-left:$padding;
 		text-align: right;
 	}
 }
 @media screen and (max-width: $small) {
+	.main-navigation  {
+		position: relative;
+		width:100%;
+	}
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
 	}
-
 	.main-navigation ul {
 		display: none;
 	}
 }
 .main-navigation.toggled  {
-	position: relative;
-	width:100%;
-	top: -.9em;
+
 }
 .toggled .menu-toggle {
-	width:100%;
 	color:$lightgrey;
 }
 .toggled ul.menu {

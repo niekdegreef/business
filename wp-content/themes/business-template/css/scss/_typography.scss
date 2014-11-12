@@ -69,7 +69,19 @@ p, ul, ol, pre, table, blockquote {
   margin-top: 1.75em;
   margin-bottom: 1.75em;
 }
+a {
+	color:$links;
+	&:hover {
+		color:darken($links,15%);
+	//	background-color: $lightyellow;
+	}
+	&:active {
 
+	}
+	&:visited {
+		color: inherit;
+	}
+}
 /* Sanitation */
 hr {
   border: 1px solid;

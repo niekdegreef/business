@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the footer.
- *
+ * 
  * Contains the closing of the #content div and all content after
  *
  * @package business
@@ -34,14 +34,8 @@
 
             </nav><!-- #site-navigation -->
 
-            <address> 
-                <h3>Address</h3><br> 
-                BDG Beyer de Greef <br>   
-                Cape Town <br> 
-                South Africa <br>
-                www.beyerdegreef.com  
-            </address>
-            
+            <?php dynamic_sidebar( 'footer-area' ); ?>
+
             <div class="site-info" >
                 <span>
                     This is an example of a <a href="http://beyerdegreef.com">Beyer de Greef</a> 

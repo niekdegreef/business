@@ -5,7 +5,7 @@
 	}
 	@include breakpoint(small) { 
 		min-height:$gutter*4;
-		margin-bottom:$padding;
+		padding-bottom: 0;
 	}
 }
 .site-branding {

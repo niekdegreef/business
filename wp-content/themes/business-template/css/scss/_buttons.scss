@@ -71,7 +71,9 @@
 		}
 	}
 }
-
+.full-width {
+	width: 100%;
+}
 
 header .contact {
 	@include span(3 at 9 last split);
@@ -82,14 +84,12 @@ header .contact {
 		top:3.8em;
 	}
 	@include breakpoint(medium) { 
-		// font-size: 80%;
-		// line-height: 2;
 		top:2em;
 		width: span(3 last);
 	}
 	@include breakpoint(small) { 
 		position: absolute;
-		top:$padding*3;
+		top:0;
 		background-color: transparent;
 		right:0;
 		margin:0;

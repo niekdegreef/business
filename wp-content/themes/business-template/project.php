@@ -8,34 +8,28 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        <?php if ( have_posts() ) : ?>
-
-            <?php /* Start the Loop for first column take content from home-page, ACF repeater field*/ ?>
-                <article class="projects">
-                
-                    <header>
-                        <h1><?php the_title() ?></h1>
-                    </header>
-
-                    <?php while ( have_posts() ) : the_post(); ?>
-
+        <?php
+        $list_of_products_or_services = get_field('list_of_products_or_services');
+                    if( $list_of_products_or_services ): ?>
+                    <article class="projects">
+                   
+                    <?php while( has_sub_field('list_of_products_or_services') ): 
+                       
+                        $title = get_sub_field('title');
+                        $image = get_sub_field('image');
+                        $text = get_sub_field('text'); ?>
+                      
                         <section>
-                            <h2><?php get_field('name') ?></h2>
-                            <figure><img src="<?php get_field('project') ?>" alt=""> </figure>
-                            <p><?php get_field('project_description') ?></p>
+                            <h2><?php echo $title ?></h2>
+
+                            <figure><img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"> </figure>
+
+                            <?php echo $text ?>
                         </section>
 
                     <?php endwhile; ?>
 
                 </article>
-
-                <!-- optional extra contact button, if page is long -->
-               <!--  <a class="contact" href="<?php //get_field('link') ?>">
-                    <p><?php //get_field('button_text') ?></p>
-                    <span class="genericon genericon-mail"></span>
-                </a> -->
-
-        
         <?php endif; ?> 
         
         </main><!-- #main -->

@@ -65,7 +65,7 @@ get_header(); ?>
             <?php $reminder = get_field('contact_us_reminder');
 
                 if( $reminder ){ ?>
-                <a class="contact" href="/contact"> <p> <?php echo $reminder; ?> </p> <span class="genericon genericon-mail"></span> </a>
+                <a class="contact full-width" href="/contact"> <p> <?php echo $reminder; ?> </p> <span class="genericon genericon-mail"></span> </a>
                 
             <?php } ?>       
             

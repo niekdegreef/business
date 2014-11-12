@@ -8,34 +8,40 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
 
-        <?php if ( have_posts() ) : ?>
+        <?php
+        $list_of_people = get_field('list_of_people');
+            
+            if( $list_of_people ): ?>
 
-            <?php /* Start the Loop for first column take content from home-page, ACF repeater field*/ ?>
-                <article class="people">
-                
-                <header>
-                    <h1><?php the_title() ?></h1>
-                </header>
+                    <article class="people">
 
+                    <header>
+                        <h1><?php the_title() ?></h1>
+                    </header>
 
-            <?php while ( have_posts() ) : the_post(); ?>
+                    <?php while( has_sub_field('list_of_people') ): 
+                       
+                        $name = get_sub_field('name');
+                        $image = get_sub_field('image');
+                        $function = get_sub_field('function');
+                        $bio = get_sub_field('bio'); ?>
+                      
+                        <section>
+                            <h2><?php echo $name ?>
+                                <span><?php echo $function ?></span>
+                            </h2>
 
-                <section>
-                    <img src="images/caro.jpg" alt="">
-                    <h2><?php get_field('name') ?><br> 
-                        <span><?php get_field('function') ?></span>
-                    </h2>
-                    <img src=" <?php get_field('profile') ?> " alt="">
-                    <p><?php get_field('bio') ?></p>
-                        
-                </section>
+                            <figure><img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"> </figure>
 
-            <?php endwhile; ?>
+                            <?php echo $bio ?>
+
+                        </section>
+
+                    <?php endwhile; ?>
 
                 </article>
-        
-        <?php endif; ?> 
 
+        <?php endif; ?> 
 
     <!--     <a class="contact" href="#">
             <p>contact us for more information about available personel &amp; software packages</p>

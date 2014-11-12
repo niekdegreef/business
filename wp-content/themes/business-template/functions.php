@@ -93,6 +93,20 @@ function business_widgets_init() {
 }
 add_action( 'widgets_init', 'business_widgets_init' );
 
+function footer_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'business' ),
+		'id'            => 'footer-area',
+		'description'   => 'This is where address & contact details go',
+		'before_widget' => '<address>',
+		'after_widget'  => '</address>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'footer_widgets_init' );
+
+
 /**
  * Enqueue scripts and styles.
  */

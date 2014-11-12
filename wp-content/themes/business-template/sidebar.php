@@ -37,7 +37,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
             <ul>
                 <li>
                     <figure>
-                        <a href="#"><img src="images/video1.png" alt=""></a>
+                        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video1.png" alt=""></a>
                     </figure>
                     <figcaption>
                         <h3>Revit 3D Autocad project</h3>
@@ -46,7 +46,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
                 </li>
                 <li>
                     <figure>
-                         <a href="#"><img src="images/video2.png" alt=""></a>
+                         <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/video2.png" alt=""></a>
                     </figure>
                     <figcaption>
                         <h3>Revit 3D Autocad project</h3>
@@ -58,7 +58,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
                 <h3>YouTube channel</h3>
                    <a href="#">
                   
-                    <img style="max-width:120px" src="images/youtube.png" alt="youtube channel" width="100"></a>
+                    <img style="max-width:120px" src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png" alt="youtube channel" width="100"></a>
                </li>
             </ul>
         </aside>

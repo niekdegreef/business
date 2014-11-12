@@ -14,9 +14,8 @@
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-        <link rel="stylesheet" href="style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/navigation.js"></script>
+        <!-- // <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic' rel='stylesheet' type='text/css'>
     
     <?php wp_head(); ?>
@@ -43,9 +42,9 @@
         </nav><!-- #site-navigation -->
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <h1 class="menu-toggle"><?php _e( 'Menu', 'business' ); ?>
+            <button class="menu-toggle"><?php _e( 'Menu', 'business' ); ?>
                 <span class="genericon genericon-menu"></span>
-            </h1>
+            </button>
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </nav><!-- #site-navigation -->
 
