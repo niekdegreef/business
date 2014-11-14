@@ -117,10 +117,12 @@ figcaption h3 {
 		padding-top: 2px;
 		font-size:85%; 
 	}
-
-
 }
-
+.widget-area .video_showcase {
+	li a {
+		max-width: none;
+	}
+}
 
 
 

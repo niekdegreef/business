@@ -33,25 +33,25 @@
     <header id="masthead" class="site-header group" role="banner">
         <div class="centre-wrapper group">
             
-        <div class="site-branding">
-            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt=""></a></h1>
-        </div>
-    
-        <nav id="site-utility-navigation" class="utility" role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
-        </nav><!-- #site-navigation -->
+            <nav id="site-utility-navigation" class="utility" role="navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
+            </nav><!-- #site-navigation -->
 
-        <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle"><?php _e( 'Menu', 'business' ); ?>
-                <span class="genericon genericon-menu"></span>
-            </button>
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </nav><!-- #site-navigation -->
-
-        <a class="contact" href="/contact">
-            <p>This is a sample site!</p>
-            <span class="genericon genericon-mail"></span>
-        </a>
+            <div class="site-branding"> <!-- span of 3 -->
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt=""></a></h1>
+            </div>
+                                       <!-- span of 3 -->
+            <nav id="site-navigation" class="main-navigation group" role="navigation">
+                <button class="menu-toggle"><?php _e( 'Menu', 'business' ); ?>
+                    <span class="genericon genericon-menu"></span>
+                </button>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </nav><!-- #site-navigation -->
+                                        <!-- span of 3 -->
+            <a class="contact" href="/contact">
+                <p>This is a sample site!</p>
+                <span class="genericon genericon-mail"></span>
+            </a>
 
         </div>
     </header><!-- #masthead -->

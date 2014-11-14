@@ -1,19 +1,21 @@
 .site-header {
+	position: relative;
 	margin-bottom: $gutter;
 	padding-bottom: $gutter;
 	@include breakpoint(medium) { 
+		padding-top: $gutter;
+		height: 10em;
 	}
 	@include breakpoint(small) { 
-		min-height:$gutter*4;
+		// height: 13em;
+		padding-top: 0;
 		padding-bottom: 0;
 	}
 }
+
 .site-branding {
+	@include span (3);
 	float:left;
-	@include breakpoint(medium) { 
-		@include span (2);
-		top:0;
-	}
 	@include breakpoint(small) { 
 		clear:both;
 		@include span (3);
@@ -23,22 +25,29 @@
 }
 .site-title {
 	border:none;
+	width:100%;
 	margin-bottom: 0;
-	font-size: 3em;
+	// font-size: 3em;
+	margin-top:$padding;
 	@include breakpoint(medium) { 
-		margin-top:0;
+		
 	}
 	a {
 		border:none
 	}
 	img {
-		@include span(7 before);
-			@include breakpoint(medium) { 
-				max-width: 100%;
-				width:2.25em;
-			}
+		width:5.5em;
+		max-width: none;
+		// @include span(7 before);
+		// 	@include breakpoint(medium) { 
+		// 		max-width: 100%;
+		// 		width:2.25em;
+		// 	}
+	}
+	@include breakpoint(medium) { 
+		margin-top:0;
 	}
 	@include breakpoint(small) { 
 		margin-bottom: 1em;
-		}
+	}
 }

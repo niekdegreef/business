@@ -76,15 +76,14 @@
 }
 
 header .contact {
-	@include span(3 at 9 last split);
+	@include span(3 last split);
 	top:3.6em;
 	display: block;
-	width: span(2);
 	&:active {
 		top:3.8em;
 	}
 	@include breakpoint(medium) { 
-		top:2em;
+		top:-5em;
 		width: span(3 last);
 	}
 	@include breakpoint(small) { 

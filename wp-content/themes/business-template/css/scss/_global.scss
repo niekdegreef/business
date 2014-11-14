@@ -6,7 +6,7 @@
 }
 /* apply a natural box layout model to all elements */
 * { box-sizing: border-box; }
-img { width:100%}
+img { width:100%} 
 
 body {
 	background-repeat: no-repeat;
@@ -31,8 +31,7 @@ body {
 	border-top: none;
 }
 .content-area {
-	float:left;
-	@include span(8 split);
+	@include span(8);
 	@include breakpoint(medium) { 
 		clear:both;
 		@include span(12 split);
@@ -42,14 +41,14 @@ article header {
 	margin-bottom: $gutter*2;
 }
 .colOne {
-	@include span(6);
+	@include span(4 of 8 after split);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%;
 	}
 }
 .colTwo {
-	@include span(6 last);
+	@include span(4 of 8 last);
 	@include breakpoint(medium) { 
 		clear:both;
 		width:100%;
