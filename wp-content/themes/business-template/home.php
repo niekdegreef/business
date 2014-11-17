@@ -61,14 +61,13 @@ get_header(); ?>
                     <?php endwhile; ?>
                     <?php endif; ?>
                       
-
-            <?php $reminder = get_field('contact_us_reminder');
-
-                if( $reminder ){ ?>
-                <a class="contact full-width" href="/contact"> <p> <?php echo $reminder; ?> </p> <span class="genericon genericon-mail"></span> </a>
-                
-            <?php } ?>       
-            
+                <?php $reminder = get_field('contact_us_reminder');
+                    if( $reminder ){ ?>
+                    <a class="contact full-width" href="/contact"> 
+                        <p> <?php echo $reminder; ?> </p> 
+                        <span class="genericon genericon-mail"></span>
+                    </a>
+                <?php } ?>       
 
             </article>  
            

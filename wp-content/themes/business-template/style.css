@@ -564,11 +564,11 @@ p, ul, ol, pre, table, blockquote {
   margin-bottom: 1.75em; }
 
 a {
-  color: #E9371A; }
-  a:hover {
-    color: #a72510; }
+  color: #145a5f; }
   a:visited {
-    color: inherit; }
+    color: #145a5f; }
+  a:hover {
+    color: #22959e; }
 
 /* Sanitation */
 hr {
@@ -1930,8 +1930,7 @@ header .contact {
   padding-bottom: 1.618em; }
   @media (max-width: 58.75em) {
     .site-header {
-      padding-top: 1.618em;
-      height: 10em; } }
+      padding-top: 1.618em; } }
   @media (max-width: 38em) {
     .site-header {
       padding-top: 0;
@@ -2084,8 +2083,9 @@ address {
 .feature {
   padding: 0.618em 0;
   margin: 0;
+  line-height: 1.6;
   text-transform: uppercase;
-  font-size: 80%; }
+  font-size: 90%; }
   @media (max-width: 68.5em) {
     .feature {
       margin-top: 3.236em; } }
@@ -2122,6 +2122,8 @@ address {
     display: block;
     line-height: 1em;
     padding-top: 2px; }
+  .feature p {
+    margin-top: 0.618em; }
 
 figcaption h3 {
   clear: both; }
@@ -2144,6 +2146,8 @@ figcaption h3 {
         line-height: 1.333333333em;
         margin-top: 1.33333333em;
         margin-bottom: 1.33333333em; } }
+  .widget-area .widget h2 {
+    margin-top: 0; }
   .widget-area .widget a {
     display: block;
     width: 100%;
@@ -2168,15 +2172,16 @@ figcaption h3 {
     float: left;
     max-width: 58%;
     display: block; }
+  .widget-area .widget p {
+    text-transform: none; }
+  .widget-area .widget img {
+    margin: 0.618em 0; }
   .widget-area .widget span.post-date {
     float: right;
     max-width: 38%;
     display: block;
     padding-top: 2px;
     font-size: 85%; }
-
-.widget-area .video_showcase li a {
-  max-width: none; }
 
 .mailer {
   background-color: #ffffed; }

@@ -70,17 +70,17 @@ p, ul, ol, pre, table, blockquote {
   margin-bottom: 1.75em;
 }
 a {
-	color:$links;
-	&:hover {
+	color:darken($links,15%);
+	&:visited {
 		color:darken($links,15%);
-	//	background-color: $lightyellow;
+	}
+	&:hover {
+		color:$links;
 	}
 	&:active {
 
 	}
-	&:visited {
-		color: inherit;
-	}
+	
 }
 /* Sanitation */
 hr {
