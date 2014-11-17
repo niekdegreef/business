@@ -76,15 +76,26 @@
 }
 
 header .contact {
-	@include span(3 last split);
-	top:3.6em;
+	//@include span(3 last split);
+	width: span(2 last);
+	position: absolute;
+	right: $padding;
+	bottom: $padding;
 	display: block;
+
 	&:active {
-		top:3.8em;
+		// top:3.8em;
+	}
+	@include breakpoint(large) { 
+		bottom:0;
+		width: span(2 last);
+		p {
+			font-size: 80%;
+		}
 	}
 	@include breakpoint(medium) { 
-		top:-5em;
-		width: span(3 last);
+		bottom: $padding;
+		width: span(4 last);
 	}
 	@include breakpoint(small) { 
 		position: absolute;

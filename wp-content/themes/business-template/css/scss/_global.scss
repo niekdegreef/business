@@ -13,6 +13,7 @@ body {
 } 
 .centre-wrapper {
 	@include container($xlarge);
+	position: relative;
 }
 .site-header {
 	border-bottom: 1px solid $secondaryAlt;
