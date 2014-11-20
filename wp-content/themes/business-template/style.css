@@ -2015,13 +2015,24 @@ nav.footer-nav {
   height: 10em;
   width: 100%;
   text-align: right;
-  color: #16100F;
-  margin-bottom: 4.854em;
-  position: relative; }
+  color: #16100F; }
   .site-info span {
     text-align: left;
-    float: left;
-    width: 100%; }
+    float: left; }
+  .site-info span.attribution {
+    display: block;
+    text-align: right;
+    float: right;
+    line-height: 1; }
+    .site-info span.attribution a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      float: right;
+      font-weight: lighter; }
+    .site-info span.attribution .genericon-code {
+      margin-right: .3em;
+      padding-top: 2px; }
 
 address {
   width: 33.33333%;

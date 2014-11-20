@@ -38,8 +38,10 @@
 
             <div class="site-info" >
                 <span>
-                    This is an example of a <a href="http://beyerdegreef.com">Beyer de Greef</a> 
-                    website, for demo purposes only. 
+                &copy; <?php echo date("Y"); ?> Beyerdegreef
+                </span>
+                <span class="attribution">
+                    <a href="http://beyerdegreef.com" target="blank"><span class="genericon genericon-code"></span> site</a>
                 </span>
             </div>
 

@@ -37,12 +37,28 @@ nav.footer-nav {
 	width:100%;
 	text-align: right;
 	color:$black;
-	margin-bottom:$gutter*3;
-	position: relative;
+	// margin-bottom:$gutter*3;
 	span {
 		text-align: left;
 		float:left;
-		width:100%;
+		//width:100%;
+	}
+	span.attribution {
+		display: block;
+		text-align: right;
+		float:right;
+		line-height: 1;
+		a {
+			text-decoration: none;
+			color:white;
+			display: block;
+			float: right;
+			font-weight: lighter;
+		}
+		.genericon-code {
+			margin-right: .3em;
+			padding-top: 2px;
+		}
 	}
 }
 address {
