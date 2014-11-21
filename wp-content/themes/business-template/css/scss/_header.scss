@@ -36,6 +36,7 @@
 		border:none
 	}
 	object {
+		max-width: 100%; //make sure svg doesnt spill out
 		position: relative;
 		z-index: -1;// this is to make the link work, in combo with display block on the a
 		// pointer-events: none; // link does not work without this, but is not supported in IE untill IE 11

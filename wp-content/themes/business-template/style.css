@@ -2038,6 +2038,7 @@ header .contact_border {
     display: block;
     border: none; }
   .site-title object {
+    max-width: 100%;
     position: relative;
     z-index: -1; }
   .site-title img, .site-title .logo {
