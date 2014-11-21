@@ -1653,6 +1653,25 @@ article.people img {
   -webkit-transition: none;
           transition: none;
   box-shadow: inset 0 2em 0 rgba(255, 255, 255, 0.05), inset 0 -0.2em 0 rgba(255, 255, 255, 0.05), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.25); }
+  .contact p {
+    color: white;
+    float: none;
+    display: inline-block;
+    width: 80%;
+    margin: 0; }
+  .contact span {
+    color: white;
+    display: inline-block;
+    font-size: 32px;
+    float: right;
+    text-align: right;
+    width: 20%;
+    bottom: 0.618em; }
+    @media (max-width: 58.75em) {
+      .contact span {
+        float: right;
+        position: relative;
+        bottom: 0; } }
   .contact:hover, .contact:focus {
     background-color: #e33316;
     box-shadow: inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), inset 0 2em 0 rgba(255, 255, 255, 0.05), 0 0.25em 0.25em rgba(0, 0, 0, 0.25); }
@@ -1675,25 +1694,6 @@ article.people img {
       width: 100%;
       box-shadow: none;
       border-radius: 0; } }
-  .contact p {
-    color: white;
-    float: none;
-    display: inline-block;
-    width: 80%;
-    margin: 0; }
-  .contact span {
-    color: white;
-    display: inline-block;
-    font-size: 32px;
-    float: right;
-    text-align: right;
-    width: 20%;
-    bottom: 0.618em; }
-    @media (max-width: 58.75em) {
-      .contact span {
-        float: right;
-        position: relative;
-        bottom: 0; } }
 
 .full-width {
   width: 100%; }
@@ -1713,7 +1713,7 @@ header .contact {
   @media (max-width: 58.75em) {
     header .contact {
       bottom: 0.618em;
-      width: 33.33333%; } }
+      width: 25%; } }
   @media (max-width: 38em) {
     header .contact {
       position: absolute;
@@ -1721,6 +1721,7 @@ header .contact {
       background-color: transparent;
       right: 0;
       margin: 0;
+      bottom: auto;
       padding: 0;
       margin-top: 0; }
       header .contact:hover, header .contact:active {
@@ -1732,6 +1733,77 @@ header .contact {
         width: 100%;
         color: #E9371A;
         margin-right: 0.618em; } }
+
+.contact_border {
+  border: 2px solid #E9371A;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.618em 1.236em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: none;
+          transition: none; }
+  .contact_border p {
+    float: none;
+    display: inline-block;
+    width: 80%;
+    margin: 0; }
+  .contact_border span {
+    display: inline-block;
+    font-size: 32px;
+    float: right;
+    text-align: right;
+    width: 20%;
+    bottom: 0.618em; }
+    @media (max-width: 58.75em) {
+      .contact_border span {
+        float: right;
+        position: relative;
+        bottom: 0; } }
+  .contact_border:hover {
+    background-color: #e0f7f8;
+    border-color: #1d8189; }
+  .contact_border:active {
+    background-color: #f5fcfd;
+    border-color: #14595f; }
+
+header .contact_border {
+  width: 16.66667%;
+  position: absolute;
+  right: 0.618em;
+  bottom: 0.618em;
+  display: block; }
+  @media (max-width: 68.5em) {
+    header .contact_border {
+      bottom: 0;
+      width: 16.66667%; }
+      header .contact_border p {
+        font-size: 80%; } }
+  @media (max-width: 58.75em) {
+    header .contact_border {
+      bottom: 0.618em;
+      width: 33.33333%; } }
+  @media (max-width: 38em) {
+    header .contact_border {
+      position: absolute;
+      top: 0;
+      background-color: transparent;
+      right: 0;
+      margin: 0;
+      bottom: auto;
+      border: none;
+      padding: 0;
+      margin-top: 0; }
+      header .contact_border:hover, header .contact_border:active {
+        background-color: transparent;
+        box-shadow: none; }
+      header .contact_border p {
+        display: none; }
+      header .contact_border span {
+        width: 100%;
+        color: #E9371A; } }
 
 /*--------------------------------------------------------------
 5.2 Menus - styling from underscores-theme
