@@ -83,11 +83,7 @@
 
 }
 .main-navigation ul {
-	vertical-align: bottom;
-	float:left;
-	width: 100%;
-	@include breakpoint(medium) { 
-	}
+
 }
 .main-navigation li {
 	text-transform: uppercase;
