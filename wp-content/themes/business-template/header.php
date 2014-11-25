@@ -58,7 +58,7 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </nav><!-- #site-navigation -->
                                         <!-- span of 3 -->
-            <a class="buttun contact_border" href="/contact"> <!-- alternative is class .contact for 3d effect -->
+            <a class="button contact_border" href="/contact"> <!-- alternative is class .contact for 3d effect -->
                 <p>This is a sample site!</p>
                 <span class="genericon genericon-mail"></span>
             </a>
