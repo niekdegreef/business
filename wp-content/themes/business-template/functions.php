@@ -113,6 +113,9 @@ add_action( 'widgets_init', 'footer_widgets_init' );
 function business_scripts() {
 	wp_enqueue_style( 'business-style', get_stylesheet_uri() );
 
+	wp_register_script( 'modernizr-min', get_template_directory_uri() . '/js/min/modernizr-min.js', true );
+	wp_enqueue_script( 'modernizr-min' );
+
 	wp_enqueue_script( 'jquery' );
 		
 		if ( is_page_template('faq.php') ) { 
