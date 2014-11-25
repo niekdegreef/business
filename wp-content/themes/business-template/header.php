@@ -66,7 +66,6 @@
         </div>
     </header><!-- #masthead -->
 
-
     <?php
     if ( is_home() ) {
     ?>

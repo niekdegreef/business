@@ -72,6 +72,7 @@
 		* **themes**
 			* _mailer.scss     		 [ Mailer theme ]
 		* **vendors**
+			* _jquery-ui.scss   	 	 [ scss for accordion ]
 			* _slider.scss   	 	 [ slider ]
 			* _lightgallery.scss  		 [ lightgallery ]
 		* **quick fixes**

@@ -59,38 +59,27 @@ article.people {
 
 	}
 }
-
 .not_selected {
 	background-color: red;
 }
-.accordion {
-	dt:before {
+
+.accordion dt {
+	&:before {
+		margin-right: $padding;
 		@include genericons-rules;
-		line-height: 2;
 		content: '\f501';
-		float:left;
+		line-height: 1.6;
 	}
-
-   dt, dd {
-
-
-      &:last-of-type {
-
-      }
-      a {
-        display: block;
-        color: black;
-        font-weight: bold;
-      }
-   }
-  dd {
-     border-top: 0; 
-     &:last-of-type {
-
-       position: relative;
-
-     }
-  }
+	&.ui-state-active:before {
+		content: '\f502';
+	}
 }
 
+
+
+
+.ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active {
+	// background-color: red;
+	// transition:all 1s ease;
+}
 
