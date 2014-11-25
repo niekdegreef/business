@@ -1593,6 +1593,33 @@ article.people img {
   float: left;
   max-width: 200px; }
 
+.not_selected {
+  background-color: red; }
+
+.accordion dt:before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'Genericons';
+  text-decoration: inherit;
+  font-weight: normal;
+  font-style: normal;
+  vertical-align: top;
+  line-height: 2;
+  content: '\f501';
+  float: left; }
+.accordion dt a, .accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold; }
+.accordion dd {
+  border-top: 0; }
+  .accordion dd:last-of-type {
+    position: relative; }
+
 .banner {
   display: block;
   margin-bottom: 1.618em;
@@ -1888,11 +1915,6 @@ header .contact_border {
         margin-left: 0; }
       .utility li a {
         margin-left: 0; } }
-
-.main-navigation ul {
-  vertical-align: bottom;
-  float: left;
-  width: 100%; }
 
 .main-navigation li {
   text-transform: uppercase;

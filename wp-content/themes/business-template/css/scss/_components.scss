@@ -59,3 +59,38 @@ article.people {
 
 	}
 }
+
+.not_selected {
+	background-color: red;
+}
+.accordion {
+	dt:before {
+		@include genericons-rules;
+		line-height: 2;
+		content: '\f501';
+		float:left;
+	}
+
+   dt, dd {
+
+
+      &:last-of-type {
+
+      }
+      a {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 0; 
+     &:last-of-type {
+
+       position: relative;
+
+     }
+  }
+}
+
+
