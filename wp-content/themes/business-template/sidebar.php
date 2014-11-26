@@ -21,7 +21,6 @@
                     $heading = get_sub_field('heading');
                     $content = get_sub_field('content');
                 ?>
-
                     <?php if( $heading ): ?>
 
                         <aside class="widget group">
@@ -59,12 +58,10 @@
 
                     <?php endwhile; ?>
 
-             <?php } //end of image gallery ?>
-
-
-
-            <?php dynamic_sidebar( 'sidebar-1' ); // used for recent news widget, through theme admin ?> 
-        
-        
+             <?php } //end of image gallery 
+             
+             else {
+                dynamic_sidebar( 'sidebar-1' ); // used for recent news widget, through theme admin
+             }?>
 
     </div><!-- #secondary -->

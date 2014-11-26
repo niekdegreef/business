@@ -3144,7 +3144,9 @@ address {
   margin-left: 1.38889%;
   margin-right: 1.38889%;
   padding: 0 1.3888888889%;
-  padding-top: 1.618em; }
+  padding-top: 1.618em;
+  border-top: 5px solid #2BBCC8;
+  margin-top: 3.236em; }
   @media (max-width: 58.75em) {
     .sidebar {
       width: 97.22222%;
