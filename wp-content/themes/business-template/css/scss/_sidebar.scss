@@ -2,7 +2,7 @@
 	@include span(4 of 12 split last);
 	padding: 0 1.3888888889%;
 	padding-top: $gutter;
-	background-color: $lightergrey;
+	// background-color: $lightergrey;
 		@include breakpoint(medium) { 
 			@include span(12 split); 
 		}
@@ -59,7 +59,8 @@
 		padding-top: 2px;
 	}
 	p {
-		margin-top: $padding;
+		clear: both;
+		margin-top: $padding*2;
 	}
 }
 figcaption h3 {

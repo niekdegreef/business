@@ -106,6 +106,9 @@
 	padding: $padding $padding*2;
 	border-top: 0;
 	overflow: auto;
+	img {
+		width: auto;
+	}
 }
 .ui-autocomplete {
 	position: absolute;

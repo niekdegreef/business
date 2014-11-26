@@ -150,3 +150,5 @@
 	* Using svg for the logo by default, note to remove width & height, otherwise SVG does not show up on ipad
 	* make sure it has 		xmlns:xlink="http://www.w3.org/1999/xlink"
 
+### References
+	* http://css-tricks.com/snippets/wordpress/
