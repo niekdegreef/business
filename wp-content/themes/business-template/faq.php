@@ -18,6 +18,7 @@ get_header(); ?>
                 </header>
 
                 <dl id="accordion" class="accordion">
+                    
                     <?php while( has_sub_field('frequently_asked_question') ): 
                        
                         $question = get_sub_field('question');
@@ -42,7 +43,3 @@ get_header(); ?>
     </div><!-- #content -->
 
 <?php get_footer(); ?>
-
-
-
-

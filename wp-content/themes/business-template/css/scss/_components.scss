@@ -72,6 +72,7 @@ article.people {
 	}
 	&.ui-state-active:before {
 		content: '\f502';
+		color:darken($primary, 20%);
 	}
 }
 
