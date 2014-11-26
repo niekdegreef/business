@@ -106,7 +106,6 @@ function footer_widgets_init() {
 }
 add_action( 'widgets_init', 'footer_widgets_init' );
 
-
 /**
  * Enqueue scripts and styles.
  */
@@ -134,12 +133,6 @@ function business_scripts() {
 	}
 }
 
-
-
-
-
-
-
 add_action( 'wp_enqueue_scripts', 'business_scripts' );
 
 /**
@@ -166,3 +159,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// prevent image defaulting with link to attachment pages
+function wpb_imagelink_setup() {
+    $image_set = get_option( 'image_default_link_type' );
+
+    if ($image_set !== 'none') {
+        update_option('image_default_link_type', 'none');
+    }
+}
+add_action('admin_init', 'wpb_imagelink_setup', 10);
