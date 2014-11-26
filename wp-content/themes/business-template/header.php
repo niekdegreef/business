@@ -14,8 +14,6 @@
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-        <!-- // <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
-
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,300italic' rel='stylesheet' type='text/css'>
     
     <?php wp_head(); ?>
@@ -74,14 +72,25 @@
             <div class="banner_caption bounce">
                 <p>
                     <?php bloginfo('description'); ?> 
-<!-- 
-                    BDG business is a website template by <a href="http://beyerdegreef.com">Beyer de Greef</a> featuring clean typography: Roboto, (or, with Typekit, Nimbus-sans &amp; Calluna )</p>
- -->
-
+                </p>
             </div>
         </div>
     
-    <?php }
+    <?php } 
+
+    else { 
+
+        $header = get_field('header_image');
+
+        if($header){ ?>
+
+            <div class="header_image group" style="background-image:url(<?php echo $header ?>)"> <!-- use background images -->
+
+            </div>
+
+        <?php } 
+
+    }
     ?>
 
     <div id="content" class="site-content">

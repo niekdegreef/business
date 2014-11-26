@@ -1,6 +1,6 @@
 // small bits, or once-off components
 
-.banner {
+.banner, .header_image {
 	display: block;
 	margin-bottom: $gutter ;
 	position: relative;
@@ -19,6 +19,18 @@
 	}
 	@include breakpoint(small) { 
 		min-height: 20em;
+	}
+}
+.header_image {
+	min-height: 25em;
+	@include breakpoint(large) { 
+		min-height: 22em;
+	}
+	@include breakpoint(medium) { 
+		min-height: 20em;
+	}
+	@include breakpoint(small) { 
+		min-height: 12em;
 	}
 }
 .banner_caption {	

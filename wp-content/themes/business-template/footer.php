@@ -16,22 +16,6 @@
                 
                 <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
 
-                <!-- <div class="quick-menu">
-                    <h3>Quick menu</h3>
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Term &amp; conditions</a></li>
-                        <li><a href="#">Outreach</a></li>
-                        <li><a href="#">About the founders</a></li>
-                        <li><a href="#">Our partners</a></li>
-                        <li><a href="#">Sponsorships </a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Contacts us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                    </ul>
-                </div> -->
-
             </nav><!-- #site-navigation -->
 
             <?php dynamic_sidebar( 'footer-area' ); ?>

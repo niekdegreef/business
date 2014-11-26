@@ -118,7 +118,7 @@ function business_scripts() {
 	wp_enqueue_script( 'jquery' );
 		
 		if ( is_page_template('faq.php') ) { 
-		   	wp_enqueue_script( 'jquery-ui-accordion' , false);
+		   	wp_enqueue_script( 'jquery-ui-accordion' , true);
 		};
 
 	wp_enqueue_script( 'business-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

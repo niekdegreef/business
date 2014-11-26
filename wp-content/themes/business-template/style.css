@@ -2578,7 +2578,7 @@ article.people img {
   content: '\f502';
   color: #196d74; }
 
-.banner {
+.banner, .header_image {
   display: block;
   margin-bottom: 1.618em;
   position: relative;
@@ -2591,14 +2591,26 @@ article.people img {
   -webkit-transition: min-height .25s linear;
           transition: min-height .25s linear; }
   @media (max-width: 68.5em) {
-    .banner {
+    .banner, .header_image {
       min-height: 30em; } }
   @media (max-width: 58.75em) {
-    .banner {
+    .banner, .header_image {
       min-height: 25em; } }
   @media (max-width: 38em) {
-    .banner {
+    .banner, .header_image {
       min-height: 20em; } }
+
+.header_image {
+  min-height: 25em; }
+  @media (max-width: 68.5em) {
+    .header_image {
+      min-height: 22em; } }
+  @media (max-width: 58.75em) {
+    .header_image {
+      min-height: 20em; } }
+  @media (max-width: 38em) {
+    .header_image {
+      min-height: 12em; } }
 
 .banner_caption {
   display: block;
