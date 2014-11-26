@@ -15,10 +15,6 @@ get_header(); ?>
 
                     <article class="people">
 
-                    <header>
-                        <h1><?php the_title() ?></h1>
-                    </header>
-
                     <?php while( has_sub_field('list_of_people') ): 
                        
                         $name = get_sub_field('name');

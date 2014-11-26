@@ -13,10 +13,6 @@ get_header(); ?>
             
             if( $frequently_asked_question ): ?>
 
-                <header>
-                    <h1><?php the_title() ?></h1>
-                </header>
-
                 <dl id="accordion" class="accordion">
                     
                     <?php while( has_sub_field('frequently_asked_question') ): 

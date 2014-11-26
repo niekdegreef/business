@@ -84,11 +84,25 @@
 
         if($header){ ?>
 
-            <div class="header_image group" style="background-image:url(<?php echo $header ?>)"> <!-- use background images -->
+        <div class="header_image group" style="background-image:url(
 
-            </div>
+        <?php echo $header['sizes']['large'] ?>)"> <!-- use background images -->
+        
+            <header class="entry-header header_title">
+                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </header><!-- .entry-header -->
+        
+         </div>
 
         <?php } 
+
+        else { ?>
+
+            <header class="entry-header header_title_no_bg">
+                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </header><!-- .entry-header -->
+
+        <?php }
 
     }
     ?>

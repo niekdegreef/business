@@ -22,12 +22,12 @@
 	}
 }
 .header_image {
-	min-height: 25em;
+	min-height: 22em;
 	@include breakpoint(large) { 
-		min-height: 22em;
+		min-height: 20em;
 	}
 	@include breakpoint(medium) { 
-		min-height: 20em;
+		min-height: 18em;
 	}
 	@include breakpoint(small) { 
 		min-height: 12em;
@@ -60,3 +60,27 @@
 		}
 	}
 }
+.header_title {
+	position: relative;
+	height:22em;
+	@include container($xlarge);
+//	float: none;
+//	@include span(12);
+	h1 {
+		color:white;
+		display: block;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.87);
+		padding: $padding;
+		position: absolute;
+		bottom: 0;	
+	}
+}
+.header_title_no_bg {
+	height:$gutter;
+	@include container($xlarge);
+}
+
+
+
+

@@ -2601,13 +2601,13 @@ article.people img {
       min-height: 20em; } }
 
 .header_image {
-  min-height: 25em; }
+  min-height: 22em; }
   @media (max-width: 68.5em) {
     .header_image {
-      min-height: 22em; } }
+      min-height: 20em; } }
   @media (max-width: 58.75em) {
     .header_image {
-      min-height: 20em; } }
+      min-height: 18em; } }
   @media (max-width: 38em) {
     .header_image {
       min-height: 12em; } }
@@ -2637,6 +2637,35 @@ article.people img {
       .banner_caption p {
         padding: 0.809em;
         font-size: 80%; } }
+
+.header_title {
+  position: relative;
+  height: 22em;
+  max-width: 75.5em;
+  margin-left: auto;
+  margin-right: auto; }
+  .header_title:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .header_title h1 {
+    color: white;
+    display: block;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 0.618em;
+    position: absolute;
+    bottom: 0; }
+
+.header_title_no_bg {
+  height: 1.618em;
+  max-width: 75.5em;
+  margin-left: auto;
+  margin-right: auto; }
+  .header_title_no_bg:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 .contact {
   background-color: #E9371A;
