@@ -27,6 +27,12 @@
 1. Define typography (http://www.gridlover.net/app/)
 1. Take parts from the underscores.css and put them in correct files
 
+##Plugins
+
+* ACF 	http://www.advancedcustomfields.com/
+* ACF repeater collapser 	https://github.com/mrwweb/ACF-Repeater-Collapser
+* Adminimize 	https://wordpress.org/plugins/adminimize/
+* WP migrate DB https://deliciousbrains.com/wp-migrate-db-pro/
 
 ## File structure
 
@@ -146,9 +152,10 @@
 	@import "slider.scss";
 	@import "shame.scss";
 
-### SVG tips
+### SVG notes
 	* Using svg for the logo by default, note to remove width & height, otherwise SVG does not show up on ipad
-	* make sure it has 		xmlns:xlink="http://www.w3.org/1999/xlink"
+
+
 
 ### References
 	* http://css-tricks.com/snippets/wordpress/

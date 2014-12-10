@@ -28,7 +28,7 @@ nav.footer-nav {
 	display:block;
 	margin-top:$gutter*2;
 	@include h-text;
-	background: rgba(255, 255, 255, 0.29) url("images/crown.png")no-repeat right;
+	// background: rgba(255, 255, 255, 0.29) url("images/crown.png")no-repeat right;
 	// box-shadow: 0 0 50px $grey;
 	clear:both;
 	float:right;
@@ -37,11 +37,9 @@ nav.footer-nav {
 	width:100%;
 	text-align: right;
 	color:$black;
-	// margin-bottom:$gutter*3;
 	span {
 		text-align: left;
 		float:left;
-		//width:100%;
 	}
 	span.attribution {
 		display: block;

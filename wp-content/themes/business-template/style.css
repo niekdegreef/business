@@ -3056,18 +3056,26 @@ header .contact_border {
   margin-bottom: 0;
   margin-top: 0.618em; }
   .site-title a {
-    display: block;
-    border: none; }
+    display: inline-block;
+    border: none;
+    width: 6.4em;
+    min-height: 3.5em;
+    content: ' ';
+    background: url(./images/logo.png) no-repeat;
+    background-image: url(./images/logo.png), none;
+    background-image: url(./images/logo.svg), none;
+    background-repeat: no-repeat;
+    background-size: contain; }
+    @media (max-width: 38em) {
+      .site-title a {
+        width: 7.6em;
+        margin-left: 0.309em; } }
   .site-title object {
-    max-width: 100%;
     position: relative;
+    max-width: 5.5em;
     z-index: -1; }
-  .site-title img, .site-title .logo {
-    width: 6.5em;
-    max-width: none; }
-    @media (max-width: 58.75em) {
-      .site-title img, .site-title .logo {
-        width: 5em; } }
+  .site-title img {
+    max-width: 6.5em; }
   @media (max-width: 58.75em) {
     .site-title {
       margin-top: 0; } }
@@ -3109,7 +3117,6 @@ nav.footer-nav {
   margin-top: 3.236em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background: rgba(255, 255, 255, 0.29) url("images/crown.png") no-repeat right;
   clear: both;
   float: right;
   padding: 0.618em;

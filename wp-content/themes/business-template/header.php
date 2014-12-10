@@ -37,15 +37,9 @@
 
             <div class="site-branding"> <!-- span of 3 -->
                
-               <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="Logo"><!-- fallback -->
-
-                  <!--   <object class="logo" type="image/svg+xml" data="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="Logo">
-                    </object>  -->
-
-                </a></h1>
+                <h1 class="site-title">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> </a>
+                </h1>
 
             </div>
                                        <!-- span of 3 -->
