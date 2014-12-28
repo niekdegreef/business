@@ -1,14 +1,15 @@
-<h1>Personal starter theme &amp; dev notes for small WP sites.</h1>
+<h1>Personal starter &lsquo;recipe&rsquo; for small-ish WP sites.</h1>
 
 <h2>Local tools</h2>
 
 <ul>
+<li>Illustrator</li>
 <li>MAMP</li>
-<li>Codekit</li>
+<li>Codekit (SCSS / Autoprefixr / Susy)</li>
 <li>Github client</li>
-<li>Susy grids - https://github.com/ericam/susy</li>
-<li>SCSS</li>
+<li>Susy grids - https://github.com/ericam/susy (used through codekit)</li>
 <li>Devdocs - http://devdocs.io</li>
+<li>VirtualBox with Windows &amp; IE 8 and 9 for testing</li>
 </ul>
 
 
@@ -24,9 +25,9 @@
 <h2>Process</h2>
 
 <ol>
-<li>Design &amp; set up styles in AI</li>
+<li>Design &amp; set up styles on paper, then in Illustrator</li>
 <li>Configure servers: MAMP / remote dev server [check php versions are same]</li>
-<li>Set up folder structure, drop into codekit [check libsass comiler &amp; autoprefixr checked]</li>
+<li>Set up folder structure, drop into codekit [check libsass compiler &amp; autoprefixr checked] Note as of 12-14 libsass &amp; susy don&rsquo;t like each other, fix on the way apparently, til then, slower compiling times</li>
 <li>Download latest underscores starter theme: http://underscores.me/</li>
 <li>Get latest version of susy https://github.com/ericam/susy (or use via Codekit)</li>
 <li>Include &ldquo; @import "susy&rdquo;; &ldquo; in the main.scss to use Susy via Codekit</li>
@@ -41,7 +42,7 @@
 
 <ul>
 <li>ACF   http://www.advancedcustomfields.com/</li>
-<li>ACF repeater collapser    https://github.com/mrwweb/ACF-Repeater-Collapser</li>
+<li>ACF repeater collapser    https://github.com/mrwweb/ACF-Repeater-Collapser, for faq lists for example, to long to scroll through</li>
 <li>Adminimize    https://wordpress.org/plugins/adminimize/</li>
 <li>WP migrate DB https://deliciousbrains.com/wp-migrate-db-pro/</li>
 <li>clean-author-admin-theme      My own little plugin for a custom login screen, logo &amp; background image</li>
@@ -67,11 +68,11 @@
 <li><h3>css</h3>
 
 <ul>
-<li>admin.css                 [ load only if necesarry, used for custom styling of WP admin ]</li>
+<li>admin.css                  [ load only if necesarry, used for custom styling of WP admin ]</li>
 </ul>
 </li>
-<li><h3>susy                      [ https://github.com/ericam/susy ]</h3></li>
-<li><h3>animate.scss              [ https://github.com/geoffgraham/animate.scss ]</h3></li>
+<li><h3>susy                       [ https://github.com/ericam/susy ]</h3></li>
+<li><h3>animate                    [ https://github.com/geoffgraham/animate.scss, import only the necesarry in animate.scss]</h3></li>
 <li><h3>scss</h3>
 
 <ul>
@@ -232,6 +233,7 @@
 <h3>SVG notes</h3>
 
 <pre><code>* Using svg for the logo by default, note to remove width &amp; height, otherwise SVG does not show up on ipad
+* png fallback
 </code></pre>
 
 <h3>References</h3>

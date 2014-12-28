@@ -1,12 +1,13 @@
-#Personal starter theme & dev notes for small WP sites. #
+#Personal starter 'recipe' for small-ish WP sites. #
 
 ##Local tools
+ * Illustrator
  * MAMP
- * Codekit
+ * Codekit (SCSS / Autoprefixr / Susy)
  * Github client
- * Susy grids - https://github.com/ericam/susy
- * SCSS
+ * Susy grids - https://github.com/ericam/susy (used through codekit)
  * Devdocs - http://devdocs.io
+ * VirtualBox with Windows & IE 8 and 9 for testing
 
 ##Online tools
 
@@ -16,9 +17,9 @@
 
 ##Process
 
-1. Design & set up styles in AI
+1. Design & set up styles on paper, then in Illustrator
 1. Configure servers: MAMP / remote dev server [check php versions are same]
-1. Set up folder structure, drop into codekit [check libsass comiler & autoprefixr checked]
+1. Set up folder structure, drop into codekit [check libsass compiler & autoprefixr checked] Note as of 12-14 libsass & susy don't like each other, fix on the way apparently, til then, slower compiling times
 1. Download latest underscores starter theme: http://underscores.me/
 1. Get latest version of susy https://github.com/ericam/susy (or use via Codekit)
 1. Include " @import "susy"; " in the main.scss to use Susy via Codekit
@@ -30,7 +31,7 @@
 ##Plugins
 
 * ACF 	http://www.advancedcustomfields.com/
-* ACF repeater collapser 	https://github.com/mrwweb/ACF-Repeater-Collapser
+* ACF repeater collapser 	https://github.com/mrwweb/ACF-Repeater-Collapser, for faq lists for example, to long to scroll through
 * Adminimize 	https://wordpress.org/plugins/adminimize/
 * WP migrate DB https://deliciousbrains.com/wp-migrate-db-pro/
 * clean-author-admin-theme 		My own little plugin for a custom login screen, logo & background image
@@ -47,11 +48,11 @@
 * ### css
 
 	* ### css
-		* admin.css 				[ load only if necesarry, used for custom styling of WP admin ] 
+		* admin.css 				 [ load only if necesarry, used for custom styling of WP admin ] 
 
-	* ### susy 						[ https://github.com/ericam/susy ]
+	* ### susy 						 [ https://github.com/ericam/susy ]
 
-	* ### animate.scss 				[ https://github.com/geoffgraham/animate.scss ]
+	* ### animate	 				 [ https://github.com/geoffgraham/animate.scss, import only the necesarry in animate.scss]
 
 	* ### scss
 		* **base**
@@ -160,8 +161,7 @@
 
 ### SVG notes
 	* Using svg for the logo by default, note to remove width & height, otherwise SVG does not show up on ipad
-
-
+	* png fallback
 
 ### References
 	* http://css-tricks.com/snippets/wordpress/

@@ -17,6 +17,9 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 @import "susy";
+
+@import "animate/animate.scss";
+
 @import "variables.scss";
 @import "mixins.scss";
 @import "jquery-ui.scss";
