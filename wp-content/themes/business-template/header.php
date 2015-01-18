@@ -32,7 +32,11 @@
         <div class="centre-wrapper group">
             
             <nav id="site-utility-navigation" class="utility" role="navigation">
-                <?php wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
+            
+            <?php $walker = new Menu_With_Description; ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'walker' => $walker ) ); ?>
+
+            <?php //wp_nav_menu( array( 'theme_location' => 'utility' ) ); ?>
             </nav><!-- #site-navigation -->
 
             <div class="site-branding"> <!-- span of 3 -->
